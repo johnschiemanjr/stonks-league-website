@@ -1,0 +1,278 @@
+{
+  "draftDetail": {
+    "completeDate": 1599705349457,
+    "drafted": true,
+    "inProgress": false
+  },
+  "gameId": 1,
+  "id": 67314407,
+  "members": [
+    {
+      "displayName": "Rpeacock10",
+      "firstName": "Robert",
+      "id": "{1148FCB2-32A0-4F00-88FC-B232A0CF0087}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Peacock"
+    },
+    {
+      "displayName": "ESPNFAN74493967",
+      "firstName": "Jordan ",
+      "id": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Ford"
+    },
+    {
+      "displayName": "JBCARDS22",
+      "firstName": "John",
+      "id": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+      "isLeagueCreator": true,
+      "isLeagueManager": false,
+      "lastName": "Schieman"
+    },
+    {
+      "displayName": "Cody Catlett",
+      "firstName": "Cody",
+      "id": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Catlett"
+    },
+    {
+      "displayName": "big_n12",
+      "firstName": "noah",
+      "id": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Mascle"
+    },
+    {
+      "displayName": "Fitzy1359",
+      "firstName": "Robert ",
+      "id": "{606BA54F-F991-46A4-ABA5-4FF99136A425}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Fitzgerald"
+    },
+    {
+      "displayName": "ian03282",
+      "firstName": "ian",
+      "id": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "seemann"
+    },
+    {
+      "displayName": "Nate Gunning",
+      "firstName": "Nate",
+      "id": "{757052CD-DD9D-4918-B052-CDDD9DD91812}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Gunning"
+    },
+    {
+      "displayName": "Evan Grimm",
+      "firstName": "Evan",
+      "id": "{79F23884-4741-4C01-B238-844741DC01E8}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Grimm"
+    },
+    {
+      "displayName": "AndyS1128",
+      "firstName": "Andrew",
+      "id": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Schlichting"
+    },
+    {
+      "displayName": "ESPNfan5222448969",
+      "firstName": "Noah",
+      "id": "{ACC09CB9-7B1D-46BB-9F42-7A6B2AB48138}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Martin"
+    },
+    {
+      "displayName": "espn23913226",
+      "firstName": "Riley ",
+      "id": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+      "isLeagueCreator": false,
+      "isLeagueManager": false,
+      "lastName": "Campbell"
+    }
+  ],
+  "scoringPeriodId": 18,
+  "seasonId": 2020,
+  "segmentId": 0,
+  "settings": {
+    "acquisitionSettings": { "isUsingAcquisitionBudget": true },
+    "draftSettings": { "keeperCount": 0 },
+    "isCustomizable": true,
+    "isPublic": false,
+    "name": "The Stonks League",
+    "rosterSettings": { "isUsingUndroppableList": true },
+    "scoringSettings": { "scoringType": "H2H_POINTS" }
+  },
+  "status": {
+    "activatedDate": 1599601298702,
+    "createdAsLeagueType": 3,
+    "currentLeagueType": 0,
+    "currentMatchupPeriod": 16,
+    "finalScoringPeriod": 16,
+    "firstScoringPeriod": 1,
+    "isActive": true,
+    "isExpired": false,
+    "isFull": true,
+    "isPlayoffMatchupEdited": false,
+    "isToBeDeleted": false,
+    "isViewable": false,
+    "isWaiverOrderEdited": false,
+    "latestScoringPeriod": 18,
+    "previousSeasons": [],
+    "standingsUpdateDate": 1609751845797,
+    "teamsJoined": 12,
+    "transactionScoringPeriod": 18,
+    "waiverLastExecutionDate": 1609922368514,
+    "waiverProcessStatus": {
+      "2020-09-11T07:53:12.846+0000": 2,
+      "2020-09-16T07:20:10.197+0000": 3,
+      "2020-09-18T07:14:23.187+0000": 1,
+      "2020-09-23T07:27:52.037+0000": 7,
+      "2020-09-24T07:34:59.118+0000": 1,
+      "2020-09-30T07:05:12.612+0000": 4,
+      "2020-10-05T07:59:05.251+0000": 1,
+      "2020-10-07T07:47:26.034+0000": 5,
+      "2020-10-15T07:31:55.137+0000": 15,
+      "2020-10-16T07:04:11.712+0000": 1,
+      "2020-10-21T07:48:07.065+0000": 8,
+      "2020-10-22T08:06:39.976+0000": 1,
+      "2020-10-28T08:02:03.394+0000": 6,
+      "2020-10-29T07:06:23.033+0000": 1,
+      "2020-11-04T08:05:13.497+0000": 6,
+      "2020-11-11T09:29:47.983+0000": 7,
+      "2020-11-12T09:13:37.502+0000": 1,
+      "2020-11-13T08:54:57.773+0000": 0,
+      "2020-11-14T08:27:49.220+0000": 1,
+      "2020-11-18T08:05:38.863+0000": 5,
+      "2020-11-22T08:47:46.034+0000": 1,
+      "2020-11-25T08:14:59.719+0000": 3,
+      "2020-12-04T08:52:40.959+0000": 2,
+      "2020-12-10T08:52:21.517+0000": 6,
+      "2020-12-16T08:43:51.295+0000": 2,
+      "2020-12-23T09:00:22.069+0000": 2
+    }
+  },
+  "teams": [
+    {
+      "abbrev": "SCHI",
+      "id": 1,
+      "location": "John",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/CreepShow-ToddDetwiler/CreepShow-05.svg",
+      "logoType": "VECTOR",
+      "nickname": "Snowzeliak",
+      "owners": ["{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"]
+    },
+    {
+      "abbrev": "GRIM",
+      "id": 2,
+      "location": "Cleveland",
+      "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/19.svg",
+      "logoType": "VECTOR",
+      "nickname": "Steamers",
+      "owners": ["{79F23884-4741-4C01-B238-844741DC01E8}"]
+    },
+    {
+      "abbrev": "GUNN",
+      "id": 3,
+      "location": "Gurleys Just",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/GridironWarriors-MartinLaksman/warriors-10.svg",
+      "logoType": "VECTOR",
+      "nickname": "Wanna Have Fun",
+      "owners": ["{757052CD-DD9D-4918-B052-CDDD9DD91812}"]
+    },
+    {
+      "abbrev": "3WAY",
+      "id": 4,
+      "location": "Earl Thomas's",
+      "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/12.svg",
+      "logoType": "VECTOR",
+      "nickname": "Brother",
+      "owners": ["{24147287-CA00-4EE5-9472-87CA001EE5B1}"]
+    },
+    {
+      "abbrev": "FITZ",
+      "id": 5,
+      "location": "My Ball",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/AtTheStadium-RobbHarskamp/At_The_Stadium_09.svg",
+      "logoType": "VECTOR",
+      "nickname": "Zach Ertz",
+      "owners": ["{606BA54F-F991-46A4-ABA5-4FF99136A425}"]
+    },
+    {
+      "abbrev": "FORD",
+      "id": 6,
+      "location": "Society's",
+      "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/14.svg",
+      "logoType": "VECTOR",
+      "nickname": "BOTTOM TEXTS",
+      "owners": ["{14677180-5A6D-4ABB-A771-805A6DBABB82}"]
+    },
+    {
+      "abbrev": "LOl",
+      "id": 7,
+      "location": "Newly Shaved ",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/BlitznBears-MartinLaksman/bears-04.svg",
+      "logoType": "VECTOR",
+      "nickname": "Gooch's",
+      "owners": ["{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"]
+    },
+    {
+      "abbrev": "FREe",
+      "id": 8,
+      "location": "Free",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg",
+      "logoType": "VECTOR",
+      "nickname": "Bobby",
+      "owners": ["{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"]
+    },
+    {
+      "abbrev": "BHTC",
+      "id": 9,
+      "location": "Ram Ranch",
+      "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/4.svg",
+      "logoType": "VECTOR",
+      "nickname": "Cowboys",
+      "owners": ["{7A944288-B44E-422C-9442-88B44EA22CD2}"]
+    },
+    {
+      "abbrev": "BALL",
+      "id": 10,
+      "location": "Delaware",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/core/StarWarsTheRiseOfSkywalker/rise-skywalker-chewy.svg",
+      "logoType": "VECTOR",
+      "nickname": "Dick and Balls",
+      "owners": ["{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"]
+    },
+    {
+      "abbrev": "PEAC",
+      "id": 11,
+      "location": "Team",
+      "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/1.svg",
+      "logoType": "VECTOR",
+      "nickname": "Peacock",
+      "owners": ["{1148FCB2-32A0-4F00-88FC-B232A0CF0087}"]
+    },
+    {
+      "abbrev": "⛳️⛳️",
+      "id": 12,
+      "location": "Augusta",
+      "logo": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_A_2.svg",
+      "logoType": "VECTOR",
+      "nickname": "3 Putts",
+      "owners": ["{ACC09CB9-7B1D-46BB-9F42-7A6B2AB48138}"]
+    }
+  ]
+}
