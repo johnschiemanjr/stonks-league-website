@@ -1,0 +1,161 @@
+{
+  "gameId": 1,
+  "id": 67314407,
+  "members": [
+    {
+      "displayName": "Rpeacock10",
+      "id": "{1148FCB2-32A0-4F00-88FC-B232A0CF0087}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "ESPNFAN74493967",
+      "id": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "JBCARDS22",
+      "id": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Cody Catlett",
+      "id": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "big_n12",
+      "id": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Fitzy1359",
+      "id": "{606BA54F-F991-46A4-ABA5-4FF99136A425}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "ian03282",
+      "id": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Nate Gunning",
+      "id": "{757052CD-DD9D-4918-B052-CDDD9DD91812}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Evan Grimm",
+      "id": "{79F23884-4741-4C01-B238-844741DC01E8}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "AndyS1128",
+      "id": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "ESPNfan5222448969",
+      "id": "{ACC09CB9-7B1D-46BB-9F42-7A6B2AB48138}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "espn23913226",
+      "id": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+      "isLeagueManager": false
+    }
+  ],
+  "scoringPeriodId": 18,
+  "seasonId": 2020,
+  "segmentId": 0,
+  "settings": { "name": "The Stonks League" },
+  "status": {
+    "currentMatchupPeriod": 16,
+    "isActive": true,
+    "latestScoringPeriod": 18
+  },
+  "teams": [
+    {
+      "abbrev": "SCHI",
+      "id": 1,
+      "location": "John",
+      "nickname": "Snowzeliak",
+      "owners": ["{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"]
+    },
+    {
+      "abbrev": "GRIM",
+      "id": 2,
+      "location": "Cleveland",
+      "nickname": "Steamers",
+      "owners": ["{79F23884-4741-4C01-B238-844741DC01E8}"]
+    },
+    {
+      "abbrev": "GUNN",
+      "id": 3,
+      "location": "Gurleys Just",
+      "nickname": "Wanna Have Fun",
+      "owners": ["{757052CD-DD9D-4918-B052-CDDD9DD91812}"]
+    },
+    {
+      "abbrev": "3WAY",
+      "id": 4,
+      "location": "Earl Thomas's",
+      "nickname": "Brother",
+      "owners": ["{24147287-CA00-4EE5-9472-87CA001EE5B1}"]
+    },
+    {
+      "abbrev": "FITZ",
+      "id": 5,
+      "location": "My Ball",
+      "nickname": "Zach Ertz",
+      "owners": ["{606BA54F-F991-46A4-ABA5-4FF99136A425}"]
+    },
+    {
+      "abbrev": "FORD",
+      "id": 6,
+      "location": "Society's",
+      "nickname": "BOTTOM TEXTS",
+      "owners": ["{14677180-5A6D-4ABB-A771-805A6DBABB82}"]
+    },
+    {
+      "abbrev": "LOl",
+      "id": 7,
+      "location": "Newly Shaved ",
+      "nickname": "Gooch's",
+      "owners": ["{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"]
+    },
+    {
+      "abbrev": "FREe",
+      "id": 8,
+      "location": "Free",
+      "nickname": "Bobby",
+      "owners": ["{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"]
+    },
+    {
+      "abbrev": "BHTC",
+      "id": 9,
+      "location": "Ram Ranch",
+      "nickname": "Cowboys",
+      "owners": ["{7A944288-B44E-422C-9442-88B44EA22CD2}"]
+    },
+    {
+      "abbrev": "BALL",
+      "id": 10,
+      "location": "Delaware",
+      "nickname": "Dick and Balls",
+      "owners": ["{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"]
+    },
+    {
+      "abbrev": "PEAC",
+      "id": 11,
+      "location": "Team",
+      "nickname": "Peacock",
+      "owners": ["{1148FCB2-32A0-4F00-88FC-B232A0CF0087}"]
+    },
+    {
+      "abbrev": "⛳️⛳️",
+      "id": 12,
+      "location": "Augusta",
+      "nickname": "3 Putts",
+      "owners": ["{ACC09CB9-7B1D-46BB-9F42-7A6B2AB48138}"]
+    }
+  ]
+}

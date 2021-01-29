@@ -1,0 +1,3457 @@
+{
+  "communication": {
+    "topics": [
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1610119721310,
+          "platform": "cinco_12093",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1610119721310,
+        "dateEdited": 1610119721310,
+        "id": "1b176825-72e1-4745-91ad-d3391fe859ee",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1610119721310,
+          "platform": "cinco_12093",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 20,
+            "id": "517a0958-f09e-44d7-b2d9-5570cdc860cf",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4240021,
+            "to": 2,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 23,
+            "id": "251e1c56-89fa-4dc4-bbd0-77d793a1f917",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4262921,
+            "to": 4,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 20,
+            "id": "1b65d3d6-4db2-4ce9-88b2-99e6554d1dff",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3925347,
+            "to": 23,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 23,
+            "id": "7a6c443a-ebf9-443a-b0e9-fb31c5fd2581",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3122866,
+            "to": 20,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 23,
+            "id": "e2b07afa-6b5b-481a-ac6a-a8605caba4cb",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 16737,
+            "to": 20,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 23,
+            "id": "2327de81-0f07-4386-8771-1b2d2352e599",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 15818,
+            "to": 4,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1610119721310,
+              "platform": "cinco_12093",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1610119721310,
+            "for": 2,
+            "from": 2,
+            "id": "a0ddcfee-c900-4ad7-b249-510f5357f13e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2570986,
+            "to": 20,
+            "topicId": "1b176825-72e1-4745-91ad-d3391fe859ee"
+          }
+        ],
+        "targetId": 18,
+        "totalMessageCount": 7,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1609200453707,
+          "platform": "cinco_12032",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "date": 1609200453707,
+        "dateEdited": 1609200453707,
+        "id": "bbdb70ab-650a-4e90-97e3-0bf902571243",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1609200453707,
+          "platform": "cinco_12032",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "messages": [
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1609200453707,
+              "platform": "cinco_12032",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1609200453707,
+            "for": 6,
+            "from": 20,
+            "id": "68ca61d9-f4a7-4e92-8d70-be52a429f52e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3918298,
+            "to": 0,
+            "topicId": "bbdb70ab-650a-4e90-97e3-0bf902571243"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1609003394044,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1609003394044,
+        "dateEdited": 1609003394044,
+        "id": "75d45b00-ffed-41df-8524-fb76a721cb8b",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1609003394044,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1609003394044,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1609003394044,
+            "for": 9,
+            "from": 23,
+            "id": "e61f5990-f839-4467-9bfb-6266cb82028b",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3045138,
+            "to": 20,
+            "topicId": "75d45b00-ffed-41df-8524-fb76a721cb8b"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1609003394044,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1609003394044,
+            "for": 9,
+            "from": 20,
+            "id": "da79ffc2-abc1-47fe-8700-227203ad9dd1",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3045144,
+            "to": 21,
+            "topicId": "75d45b00-ffed-41df-8524-fb76a721cb8b"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1609003394044,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1609003394044,
+            "for": 9,
+            "from": 20,
+            "id": "a0ec8a6e-9801-43bd-83d8-2287ad8c65ba",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3040151,
+            "to": 23,
+            "topicId": "75d45b00-ffed-41df-8524-fb76a721cb8b"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 3,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608947004736,
+          "platform": "cinco_11919",
+          "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+        },
+        "date": 1608947004736,
+        "dateEdited": 1608947004736,
+        "id": "3b790fba-0f1f-4863-8725-7ddd6a8b69ed",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608947004736,
+          "platform": "cinco_11919",
+          "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+        },
+        "messages": [
+          {
+            "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608947004736,
+              "platform": "cinco_11919",
+              "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+            },
+            "date": 1608947004736,
+            "for": 10,
+            "from": 2,
+            "id": "1442399e-9d5b-4481-b1e3-144f5467ab05",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3059915,
+            "to": 20,
+            "topicId": "3b790fba-0f1f-4863-8725-7ddd6a8b69ed"
+          },
+          {
+            "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608947004736,
+              "platform": "cinco_11919",
+              "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+            },
+            "date": 1608947004736,
+            "for": 10,
+            "from": 20,
+            "id": "1e77e6d2-6634-428b-83f7-e68e2e37b5f4",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2508176,
+            "to": 2,
+            "topicId": "3b790fba-0f1f-4863-8725-7ddd6a8b69ed"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608931196294,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608931196294,
+        "dateEdited": 1608931196294,
+        "id": "d965fde5-6158-45ab-84c5-e1df5a7b6214",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608931196294,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608931196294,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608931196294,
+            "for": 7,
+            "from": 4,
+            "id": "2024a031-2788-40fc-9b97-0891e59a1ae0",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4040655,
+            "to": 20,
+            "topicId": "d965fde5-6158-45ab-84c5-e1df5a7b6214"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608931196294,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608931196294,
+            "for": 7,
+            "from": 20,
+            "id": "612e657f-aef1-4ee0-a5f5-a8321198d0b3",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3128390,
+            "to": 4,
+            "topicId": "d965fde5-6158-45ab-84c5-e1df5a7b6214"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608931196294,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608931196294,
+            "for": 7,
+            "from": 20,
+            "id": "ed8fc4c4-2da0-4ec0-b8bd-8c1401e7100f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4039359,
+            "to": 23,
+            "topicId": "d965fde5-6158-45ab-84c5-e1df5a7b6214"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608931196294,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608931196294,
+            "for": 7,
+            "from": 23,
+            "id": "ea918f72-c54e-465f-81d3-3d29971c654d",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4243160,
+            "to": 20,
+            "topicId": "d965fde5-6158-45ab-84c5-e1df5a7b6214"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 4,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929668512,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929668512,
+        "dateEdited": 1608929668512,
+        "id": "68d3eec8-48a6-4ab6-84e8-89e4145306b7",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929668512,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929668512,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929668512,
+            "for": 9,
+            "from": 20,
+            "id": "c8e442c5-e923-4ce3-80bd-1ccf648b92e7",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3045138,
+            "to": 23,
+            "topicId": "68d3eec8-48a6-4ab6-84e8-89e4145306b7"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929668512,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929668512,
+            "for": 9,
+            "from": 23,
+            "id": "70524b8d-acd6-459c-8160-d7cbeffb0da1",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3121422,
+            "to": 20,
+            "topicId": "68d3eec8-48a6-4ab6-84e8-89e4145306b7"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929630520,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929630520,
+        "dateEdited": 1608929630520,
+        "id": "b1c973c7-f391-4ea4-86e5-2b219fe75f4e",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929630520,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929630520,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929630520,
+            "for": 9,
+            "from": 4,
+            "id": "3e8b74b6-49df-4181-8d21-f1d23a318455",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3121422,
+            "to": 23,
+            "topicId": "b1c973c7-f391-4ea4-86e5-2b219fe75f4e"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929630520,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929630520,
+            "for": 9,
+            "from": 23,
+            "id": "3f224020-f999-4236-a1fb-176686d26274",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3115378,
+            "to": 4,
+            "topicId": "b1c973c7-f391-4ea4-86e5-2b219fe75f4e"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929569100,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929569100,
+        "dateEdited": 1608929569100,
+        "id": "24d53dc7-ea9a-4067-a1e1-4d37e14fc547",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929569100,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929569100,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929569100,
+            "for": 9,
+            "from": 20,
+            "id": "bdbf1cd4-9331-4e0a-9a30-87609912eba2",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3115378,
+            "to": 23,
+            "topicId": "24d53dc7-ea9a-4067-a1e1-4d37e14fc547"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929560576,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929560576,
+        "dateEdited": 1608929560576,
+        "id": "32f2784c-0f5e-4f12-ac00-54fd21851190",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929560576,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929560576,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929560576,
+            "id": "e393ce6f-14b3-4e1e-aab5-f0c7474a8e3e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 3115378,
+            "to": 9,
+            "topicId": "32f2784c-0f5e-4f12-ac00-54fd21851190"
+          }
+        ],
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929554240,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929554240,
+        "dateEdited": 1608929554240,
+        "id": "d6c128d7-8f3c-46d3-ad8a-a95fe8ca2833",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929554240,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929554240,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929554240,
+            "for": 9,
+            "from": -1,
+            "id": "e1198ded-9564-4f68-90a6-f17cf9dfbd77",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 239,
+            "targetId": 3116385,
+            "to": -1,
+            "topicId": "d6c128d7-8f3c-46d3-ad8a-a95fe8ca2833"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608929524049,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608929524049,
+        "dateEdited": 1608929524049,
+        "id": "766e29fb-8355-4ae1-8b97-9d49552f005e",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608929524049,
+          "platform": "cinco_12016",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608929524049,
+              "platform": "cinco_12016",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608929524049,
+            "for": 9,
+            "from": 23,
+            "id": "196f5a76-43cb-4516-811a-b24c2bdd1755",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3045144,
+            "to": 20,
+            "topicId": "766e29fb-8355-4ae1-8b97-9d49552f005e"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608915308274,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1608915308274,
+        "dateEdited": 1608915308274,
+        "id": "d819ae32-180c-453f-aab2-14e1b2754da4",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608915308274,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915308274,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915308274,
+            "for": 2,
+            "from": 16,
+            "id": "71533504-ab56-4247-a2e2-0db376330051",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16015,
+            "to": 20,
+            "topicId": "d819ae32-180c-453f-aab2-14e1b2754da4"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915308274,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915308274,
+            "for": 2,
+            "from": 20,
+            "id": "b02bb6c1-e460-4ea4-b6d8-6ba48c00efd1",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16028,
+            "to": 16,
+            "topicId": "d819ae32-180c-453f-aab2-14e1b2754da4"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608915301090,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1608915301090,
+        "dateEdited": 1608915301090,
+        "id": "16159673-1d7c-4a43-8bfa-96badda90b5d",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608915301090,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915301090,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915301090,
+            "for": 2,
+            "from": 23,
+            "id": "73bbe56d-5537-45df-80a9-7a3fe04aef98",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 16731,
+            "to": 20,
+            "topicId": "16159673-1d7c-4a43-8bfa-96badda90b5d"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915301090,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915301090,
+            "for": 2,
+            "from": 20,
+            "id": "e76f07e8-1a80-47b2-b788-6050e26bfc6a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 15818,
+            "to": 23,
+            "topicId": "16159673-1d7c-4a43-8bfa-96badda90b5d"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608915289318,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1608915289318,
+        "dateEdited": 1608915289318,
+        "id": "de819140-7097-4cdb-ac82-d6d07ddebdaf",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608915289318,
+          "platform": "cinco_12016",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915289318,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915289318,
+            "for": 2,
+            "from": 2,
+            "id": "5455a4f4-1d65-48e2-873b-304a661b69f7",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4240021,
+            "to": 20,
+            "topicId": "de819140-7097-4cdb-ac82-d6d07ddebdaf"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608915289318,
+              "platform": "cinco_12016",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608915289318,
+            "for": 2,
+            "from": 20,
+            "id": "efc41aa9-fe7e-4e95-a773-b3993e62827b",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2570986,
+            "to": 2,
+            "topicId": "de819140-7097-4cdb-ac82-d6d07ddebdaf"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608853911545,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608853911545,
+        "dateEdited": 1608853911545,
+        "id": "e0d5f11c-b42e-46eb-97ac-92c61bd94fd8",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608853911545,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608853911545,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608853911545,
+            "for": 7,
+            "from": 23,
+            "id": "04b8a36e-532d-4606-912a-0079e3238c39",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3128390,
+            "to": 20,
+            "topicId": "e0d5f11c-b42e-46eb-97ac-92c61bd94fd8"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608853911545,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608853911545,
+            "for": 7,
+            "from": 20,
+            "id": "74f0e411-8166-4eaf-a81c-f8fed27aae1a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4243160,
+            "to": 23,
+            "topicId": "e0d5f11c-b42e-46eb-97ac-92c61bd94fd8"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608853887571,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608853887571,
+        "dateEdited": 1608853887571,
+        "id": "61085ef8-4181-4563-93da-fc227a61c576",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608853887571,
+          "platform": "cinco_12016",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608853887571,
+              "platform": "cinco_12016",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608853887571,
+            "for": 7,
+            "from": 20,
+            "id": "1d80f6b1-060f-4999-b58a-e9b435ee8760",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3046779,
+            "to": 0,
+            "topicId": "61085ef8-4181-4563-93da-fc227a61c576"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608848262577,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "date": 1608848262577,
+        "dateEdited": 1608848262577,
+        "id": "8aab7c6a-a69f-4b4c-817a-cde819182fee",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608848262577,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "messages": [
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608848262577,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608848262577,
+            "for": 4,
+            "from": 6,
+            "id": "c0a9e79d-7de5-4103-ad63-26379c7f22d4",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3046439,
+            "to": 20,
+            "topicId": "8aab7c6a-a69f-4b4c-817a-cde819182fee"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608848262577,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608848262577,
+            "for": 4,
+            "from": 20,
+            "id": "27508261-79cb-41aa-bc02-66442611bdff",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3054212,
+            "to": 6,
+            "topicId": "8aab7c6a-a69f-4b4c-817a-cde819182fee"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608837343280,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "date": 1608837343280,
+        "dateEdited": 1608837343280,
+        "id": "cc1b6023-5aed-43f4-b537-a18c735fb1dc",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608837343280,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "messages": [
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608837343280,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608837343280,
+            "for": 4,
+            "from": 2,
+            "id": "d02a7a77-cb7c-4e44-a879-9f8af94f33cb",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4048244,
+            "to": 20,
+            "topicId": "cc1b6023-5aed-43f4-b537-a18c735fb1dc"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608837343280,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608837343280,
+            "for": 4,
+            "from": 20,
+            "id": "ab70d062-0b2b-441b-8172-f2d4bf200211",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4259979,
+            "to": 2,
+            "topicId": "cc1b6023-5aed-43f4-b537-a18c735fb1dc"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608837335198,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "date": 1608837335198,
+        "dateEdited": 1608837335198,
+        "id": "f5f0f8c1-24ac-44d3-9003-08368a69ebb4",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608837335198,
+          "platform": "cinco_12016",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "messages": [
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608837335198,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608837335198,
+            "id": "178713a6-aa1d-412a-a5c4-bceedcf82e00",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 4259979,
+            "to": 4,
+            "topicId": "f5f0f8c1-24ac-44d3-9003-08368a69ebb4"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608837335198,
+              "platform": "cinco_12016",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608837335198,
+            "id": "5def9a1a-2b9b-4c88-8e3a-9d18c3455484",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 4035403,
+            "to": 4,
+            "topicId": "f5f0f8c1-24ac-44d3-9003-08368a69ebb4"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608765498577,
+          "platform": "cinco_12002",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "date": 1608765498577,
+        "dateEdited": 1608765498577,
+        "id": "784fa16d-6faa-4620-b4cb-cb794f5c0901",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608765498577,
+          "platform": "cinco_12002",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "messages": [
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 17,
+            "id": "23b15a31-412d-496f-b076-8b265d867be1",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3051909,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 23,
+            "id": "b866f9c3-a0a0-4bff-a1f7-732f745f517b",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 13934,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 4,
+            "id": "2f0cb9c0-3ff4-454a-99fa-00eb53c0a520",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4047650,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 2,
+            "id": "005bf9b8-91dd-4ab5-878b-0835d5046b4f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3919596,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 4,
+            "id": "a8b4e054-14c1-451b-bc7f-6d74159a7b7b",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 16800,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 6,
+            "id": "6aa13d0e-2b37-4488-ad56-d908498ed73a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3121023,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 2,
+            "id": "65db09ae-d270-4468-983c-2a42c4c1f2cd",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3054850,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 16,
+            "id": "3fe1454b-2c1d-4eeb-88b9-fc5220d26cc5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16014,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765498577,
+              "platform": "cinco_12002",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608765498577,
+            "for": 6,
+            "from": 0,
+            "id": "614bab16-43b3-459f-ac79-5161413e6e17",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3917315,
+            "to": 20,
+            "topicId": "784fa16d-6faa-4620-b4cb-cb794f5c0901"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 9,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608765191206,
+          "platform": "cinco_11990",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "date": 1608765191206,
+        "dateEdited": 1608765191206,
+        "id": "11826e31-62b8-4777-8a4f-0e6a9fcf2708",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608765191206,
+          "platform": "cinco_11990",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "messages": [
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765191206,
+              "platform": "cinco_11990",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608765191206,
+            "for": 4,
+            "from": 2,
+            "id": "bb082c35-c309-41d7-ac03-0563bba1564e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2576414,
+            "to": 20,
+            "topicId": "11826e31-62b8-4777-8a4f-0e6a9fcf2708"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608765191206,
+              "platform": "cinco_11990",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608765191206,
+            "for": 4,
+            "from": 20,
+            "id": "8bcc940f-efe3-44e3-b97c-9afd63104f66",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4048244,
+            "to": 2,
+            "topicId": "11826e31-62b8-4777-8a4f-0e6a9fcf2708"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608745372901,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "date": 1608745372901,
+        "dateEdited": 1608745372901,
+        "id": "4f155f99-bbcc-4619-9628-5ba2d70431b4",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608745372901,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "messages": [
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608745372901,
+              "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608745372901,
+            "for": 8,
+            "from": 23,
+            "id": "fae71418-4296-43ec-bd82-bfc493c5a37a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 14924,
+            "to": 20,
+            "topicId": "4f155f99-bbcc-4619-9628-5ba2d70431b4"
+          },
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608745372901,
+              "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608745372901,
+            "for": 8,
+            "from": 20,
+            "id": "27d51bb7-a516-4c02-9516-40a1e87f9f7f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 15826,
+            "to": 23,
+            "topicId": "4f155f99-bbcc-4619-9628-5ba2d70431b4"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608745357202,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "date": 1608745357202,
+        "dateEdited": 1608745357202,
+        "id": "7f941113-3a3a-4cac-b54c-ada3e502d5a4",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608745357202,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "messages": [
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608745357202,
+              "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608745357202,
+            "for": 8,
+            "from": 23,
+            "id": "c86b685a-f7c9-4896-bb73-b7e18f485ef1",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2574808,
+            "to": 4,
+            "topicId": "7f941113-3a3a-4cac-b54c-ada3e502d5a4"
+          },
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608745357202,
+              "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608745357202,
+            "for": 8,
+            "from": 4,
+            "id": "882587c0-b2b7-461e-8d1e-c4fc3dd3d9b9",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 14924,
+            "to": 23,
+            "topicId": "7f941113-3a3a-4cac-b54c-ada3e502d5a4"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608745349310,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "date": 1608745349310,
+        "dateEdited": 1608745349310,
+        "id": "a4eaa12c-fdd9-4785-b8f4-ece6ade6e609",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608745349310,
+          "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "messages": [
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608745349310,
+              "platform": "kona-prod-8d8f75a7eadb8f63af7c4697244bd0dd888494da",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608745349310,
+            "for": 8,
+            "from": 20,
+            "id": "59dca36e-61e7-42b2-a35f-1c8aa0b49811",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16029,
+            "to": 16,
+            "topicId": "a4eaa12c-fdd9-4785-b8f4-ece6ade6e609"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{606BA54F-F991-46A4-ABA5-4FF99136A425}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608734483696,
+          "platform": "cinco_11985",
+          "source": "{606BA54F-F991-46A4-ABA5-4FF99136A425}"
+        },
+        "date": 1608734483696,
+        "dateEdited": 1608734483696,
+        "id": "95dacc70-8c9b-41ba-9da3-b688556664a3",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608734483696,
+          "platform": "cinco_11985",
+          "source": "{606BA54F-F991-46A4-ABA5-4FF99136A425}"
+        },
+        "messages": [
+          {
+            "author": "{606BA54F-F991-46A4-ABA5-4FF99136A425}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608734483696,
+              "platform": "cinco_11985",
+              "source": "{606BA54F-F991-46A4-ABA5-4FF99136A425}"
+            },
+            "date": 1608734483696,
+            "for": 5,
+            "from": 20,
+            "id": "e6df4fbd-24ae-47eb-88fd-290e5d5dfad5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4241479,
+            "to": 0,
+            "topicId": "95dacc70-8c9b-41ba-9da3-b688556664a3"
+          },
+          {
+            "author": "{606BA54F-F991-46A4-ABA5-4FF99136A425}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608734483696,
+              "platform": "cinco_11985",
+              "source": "{606BA54F-F991-46A4-ABA5-4FF99136A425}"
+            },
+            "date": 1608734483696,
+            "for": 5,
+            "from": 0,
+            "id": "639c7721-9e2d-4bb9-a9d5-b37e9b75f027",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 14881,
+            "to": 20,
+            "topicId": "95dacc70-8c9b-41ba-9da3-b688556664a3"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608715560635,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608715560635,
+        "dateEdited": 1608715560635,
+        "id": "ab2bc43b-212a-4c57-a355-a3b7cb0e01e8",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608715560635,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715560635,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715560635,
+            "id": "945db395-b86a-44f6-b641-f9ef2d02560c",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 4243160,
+            "to": 7,
+            "topicId": "ab2bc43b-212a-4c57-a355-a3b7cb0e01e8"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715560635,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715560635,
+            "id": "7fc06046-8ec9-4f92-86d7-6afc0df98211",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 3039707,
+            "to": 7,
+            "topicId": "ab2bc43b-212a-4c57-a355-a3b7cb0e01e8"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608715481298,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608715481298,
+        "dateEdited": 1608715481298,
+        "id": "5777591f-246e-4db5-9bc7-c81dc2e64ddb",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608715481298,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715481298,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715481298,
+            "id": "4244074a-28af-4eba-8723-c6006d8ac512",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 3039707,
+            "to": 7,
+            "topicId": "5777591f-246e-4db5-9bc7-c81dc2e64ddb"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715481298,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715481298,
+            "id": "530acb18-67ee-4c5d-8538-56c9caa550d3",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 2468609,
+            "to": 7,
+            "topicId": "5777591f-246e-4db5-9bc7-c81dc2e64ddb"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608715458914,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608715458914,
+        "dateEdited": 1608715458914,
+        "id": "7f2b5eee-3349-48a5-8fec-58e85b72105a",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608715458914,
+          "platform": "cinco_11985",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715458914,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715458914,
+            "for": 7,
+            "from": 23,
+            "id": "c23a4e1e-9d74-414a-8e4c-6be8fe28471f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4240380,
+            "to": 20,
+            "topicId": "7f2b5eee-3349-48a5-8fec-58e85b72105a"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715458914,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715458914,
+            "for": 7,
+            "from": 20,
+            "id": "6429d56d-bc8b-4e85-bcdf-944a9599ce59",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3128390,
+            "to": 23,
+            "topicId": "7f2b5eee-3349-48a5-8fec-58e85b72105a"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715458914,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715458914,
+            "for": 7,
+            "from": 20,
+            "id": "01ef28e4-801d-4538-b5a8-2a8ebab61092",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4360294,
+            "to": 2,
+            "topicId": "7f2b5eee-3349-48a5-8fec-58e85b72105a"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608715458914,
+              "platform": "cinco_11985",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608715458914,
+            "for": 7,
+            "from": 2,
+            "id": "ad03b1f9-d20d-4c8d-b1d8-2437020d317e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3051902,
+            "to": 20,
+            "topicId": "7f2b5eee-3349-48a5-8fec-58e85b72105a"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 4,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "NightlyLeagueUpdateTaskProcessor",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608714023888,
+          "platform": "lm-processor",
+          "source": "NightlyLeagueUpdateTaskProcessor"
+        },
+        "date": 1608714023888,
+        "dateEdited": 1608714023888,
+        "for": 1,
+        "id": "acec0010-c257-423b-9f89-8a335a454fd8",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608714023888,
+          "platform": "lm-processor",
+          "source": "NightlyLeagueUpdateTaskProcessor"
+        },
+        "messages": [
+          {
+            "author": "NightlyLeagueUpdateTaskProcessor",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608714023888,
+              "platform": "lm-processor",
+              "source": "NightlyLeagueUpdateTaskProcessor"
+            },
+            "date": 1608714023888,
+            "id": "dceeffbc-632c-4249-b903-6ee8ae035640",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 181,
+            "targetId": -16025,
+            "to": 8,
+            "topicId": "acec0010-c257-423b-9f89-8a335a454fd8"
+          },
+          {
+            "author": "NightlyLeagueUpdateTaskProcessor",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608714023888,
+              "platform": "lm-processor",
+              "source": "NightlyLeagueUpdateTaskProcessor"
+            },
+            "date": 1608714023888,
+            "for": 1,
+            "from": 20,
+            "id": "04de6e78-35c9-4ad2-abe6-e8b8622044e5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 180,
+            "targetId": -16029,
+            "to": 8,
+            "topicId": "acec0010-c257-423b-9f89-8a335a454fd8"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "NightlyLeagueUpdateTaskProcessor",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608714023888,
+          "platform": "lm-processor",
+          "source": "NightlyLeagueUpdateTaskProcessor"
+        },
+        "date": 1608714023888,
+        "dateEdited": 1608714023888,
+        "for": 1,
+        "id": "2429f6a4-62b5-446d-8e4a-6a889e5d3a77",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608714023888,
+          "platform": "lm-processor",
+          "source": "NightlyLeagueUpdateTaskProcessor"
+        },
+        "messages": [
+          {
+            "author": "NightlyLeagueUpdateTaskProcessor",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608714023888,
+              "platform": "lm-processor",
+              "source": "NightlyLeagueUpdateTaskProcessor"
+            },
+            "date": 1608714023888,
+            "id": "70f02fe4-4a2b-4a82-bbd4-bcd7918fe2ac",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 181,
+            "targetId": 4035676,
+            "to": 8,
+            "topicId": "2429f6a4-62b5-446d-8e4a-6a889e5d3a77"
+          },
+          {
+            "author": "NightlyLeagueUpdateTaskProcessor",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608714023888,
+              "platform": "lm-processor",
+              "source": "NightlyLeagueUpdateTaskProcessor"
+            },
+            "date": 1608714023888,
+            "for": 1,
+            "from": 20,
+            "id": "09e1d6df-c8c9-47b5-a8a2-59e0b891fdb5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 180,
+            "targetId": 15826,
+            "to": 8,
+            "topicId": "2429f6a4-62b5-446d-8e4a-6a889e5d3a77"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608679243207,
+          "platform": "cinco_11919",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "date": 1608679243207,
+        "dateEdited": 1608679243207,
+        "id": "9f424aae-733f-4427-91a5-3f7ea220f195",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608679243207,
+          "platform": "cinco_11919",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "messages": [
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608679243207,
+              "platform": "cinco_11919",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608679243207,
+            "for": 6,
+            "from": 20,
+            "id": "25c2ddbe-c032-49a4-8832-41999656f4db",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 13934,
+            "to": 23,
+            "topicId": "9f424aae-733f-4427-91a5-3f7ea220f195"
+          },
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608679243207,
+              "platform": "cinco_11919",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608679243207,
+            "for": 6,
+            "from": 23,
+            "id": "130c1ade-614e-4fb7-9cb9-f96cc5c8bcdf",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3121023,
+            "to": 6,
+            "topicId": "9f424aae-733f-4427-91a5-3f7ea220f195"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608655072850,
+          "platform": "cinco_11919",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "date": 1608655072850,
+        "dateEdited": 1608655072850,
+        "id": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608655072850,
+          "platform": "cinco_11919",
+          "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+        },
+        "messages": [
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608655072850,
+              "platform": "cinco_11919",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608655072850,
+            "for": 4,
+            "from": 23,
+            "id": "1060c6c5-a153-4ac9-84d0-db1ac145b784",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4046692,
+            "to": 20,
+            "topicId": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608655072850,
+              "platform": "cinco_11919",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608655072850,
+            "for": 4,
+            "from": 20,
+            "id": "2e15ecd2-f0e4-4365-bd32-c29390e86bd7",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4241802,
+            "to": 23,
+            "topicId": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608655072850,
+              "platform": "cinco_11919",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608655072850,
+            "for": 4,
+            "from": 2,
+            "id": "900736a9-cd72-4457-86b7-6903a5ddb462",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4242214,
+            "to": 20,
+            "topicId": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608655072850,
+              "platform": "cinco_11919",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608655072850,
+            "for": 4,
+            "from": 20,
+            "id": "9590cf15-2188-4e51-9a60-38014b42df67",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2576434,
+            "to": 2,
+            "topicId": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81"
+          },
+          {
+            "author": "{24147287-CA00-4EE5-9472-87CA001EE5B1}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608655072850,
+              "platform": "cinco_11919",
+              "source": "{24147287-CA00-4EE5-9472-87CA001EE5B1}"
+            },
+            "date": 1608655072850,
+            "for": 4,
+            "from": 23,
+            "id": "5dd615b0-1304-4466-8a7e-6c097f904372",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3116165,
+            "to": 4,
+            "topicId": "a2213c8c-f38c-44c2-8a2a-bbf3f1097e81"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 5,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608644415851,
+          "platform": "cinco_11919",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608644415851,
+        "dateEdited": 1608644415851,
+        "id": "c7f8a45a-5cb1-417f-a9e2-205393255de7",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608644415851,
+          "platform": "cinco_11919",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608644415851,
+              "platform": "cinco_11919",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608644415851,
+            "for": 9,
+            "from": 20,
+            "id": "a347af5c-d17d-46af-95b0-0f4ebfe16ea9",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4040715,
+            "to": 0,
+            "topicId": "c7f8a45a-5cb1-417f-a9e2-205393255de7"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608644415851,
+              "platform": "cinco_11919",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608644415851,
+            "for": 9,
+            "from": 2,
+            "id": "c7bf73e5-688d-459d-9e89-80380203d287",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3051926,
+            "to": 20,
+            "topicId": "c7f8a45a-5cb1-417f-a9e2-205393255de7"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608644415851,
+              "platform": "cinco_11919",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608644415851,
+            "for": 9,
+            "from": 0,
+            "id": "419a95a1-84e5-45c9-98b6-c61cd21c9a3e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 14876,
+            "to": 20,
+            "topicId": "c7f8a45a-5cb1-417f-a9e2-205393255de7"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608644415851,
+              "platform": "cinco_11919",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608644415851,
+            "for": 9,
+            "from": 20,
+            "id": "923bfdda-f684-4ed6-8da3-7f0bc555d36a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3119195,
+            "to": 2,
+            "topicId": "c7f8a45a-5cb1-417f-a9e2-205393255de7"
+          }
+        ],
+        "targetId": 16,
+        "totalMessageCount": 4,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608640859217,
+          "platform": "cinco_11919",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "date": 1608640859217,
+        "dateEdited": 1608640859217,
+        "id": "0f37f40c-4751-47ab-ba95-db36c7ec2c6f",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608640859217,
+          "platform": "cinco_11919",
+          "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+        },
+        "messages": [
+          {
+            "author": "{14677180-5A6D-4ABB-A771-805A6DBABB82}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608640859217,
+              "platform": "cinco_11919",
+              "source": "{14677180-5A6D-4ABB-A771-805A6DBABB82}"
+            },
+            "date": 1608640859217,
+            "from": "They call him Schemin Semen",
+            "id": "e3606e85-5827-4781-8348-10f71ccb254d",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 164,
+            "targetId": 6,
+            "to": "Society's BOTTOM TEXTS",
+            "topicId": "0f37f40c-4751-47ab-ba95-db36c7ec2c6f"
+          }
+        ],
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_SETTINGS"
+      },
+      {
+        "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608404574111,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "date": 1608404574111,
+        "dateEdited": 1608404574111,
+        "id": "1b881d4f-212a-433d-a362-b43457701649",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608404574111,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "messages": [
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404574111,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404574111,
+            "id": "1865c53e-c4e6-4187-98db-8a4118a87936",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 4040980,
+            "to": 1,
+            "topicId": "1b881d4f-212a-433d-a362-b43457701649"
+          },
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404574111,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404574111,
+            "id": "803e4c79-237b-4ad1-bf95-8b6baf4d3323",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 2976316,
+            "to": 1,
+            "topicId": "1b881d4f-212a-433d-a362-b43457701649"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608404054053,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "date": 1608404054053,
+        "dateEdited": 1608404054053,
+        "id": "5307c9e9-a62b-405e-b88f-bb0bd3eee77e",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608404054053,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "messages": [
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404054053,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404054053,
+            "for": 1,
+            "from": 20,
+            "id": "389c09d3-060a-4a4b-b09b-edb6cafde34d",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2979843,
+            "to": 23,
+            "topicId": "5307c9e9-a62b-405e-b88f-bb0bd3eee77e"
+          },
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404054053,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404054053,
+            "for": 1,
+            "from": 23,
+            "id": "673038f5-79fb-480a-a58d-bbee0af584e7",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2977187,
+            "to": 4,
+            "topicId": "5307c9e9-a62b-405e-b88f-bb0bd3eee77e"
+          },
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404054053,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404054053,
+            "for": 1,
+            "from": 23,
+            "id": "0c0b5649-8d81-441e-964e-1978d0251a76",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4239993,
+            "to": 20,
+            "topicId": "5307c9e9-a62b-405e-b88f-bb0bd3eee77e"
+          },
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608404054053,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608404054053,
+            "for": 1,
+            "from": 4,
+            "id": "cf9297d9-ce58-49b1-ad5d-30e6dcacbb91",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2976316,
+            "to": 20,
+            "topicId": "5307c9e9-a62b-405e-b88f-bb0bd3eee77e"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 4,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608321102785,
+          "platform": "cinco_11919",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1608321102785,
+        "dateEdited": 1608321102785,
+        "id": "c7442105-a3e8-4be0-b2c2-5476a3975efd",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608321102785,
+          "platform": "cinco_11919",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608321102785,
+              "platform": "cinco_11919",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608321102785,
+            "id": "ef05429a-2493-4440-9bb6-349326e7ed56",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 13983,
+            "to": 2,
+            "topicId": "c7442105-a3e8-4be0-b2c2-5476a3975efd"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608321102785,
+              "platform": "cinco_11919",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608321102785,
+            "id": "c0c47a8c-6416-4c9b-b936-326ab2a5a198",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 3139925,
+            "to": 2,
+            "topicId": "c7442105-a3e8-4be0-b2c2-5476a3975efd"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608258400215,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "date": 1608258400215,
+        "dateEdited": 1608258400215,
+        "id": "8266b43f-17a4-46ea-8fa8-c6a8466946e9",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608258400215,
+          "platform": "cinco_11919",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "messages": [
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608258400215,
+              "platform": "cinco_11919",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608258400215,
+            "for": 1,
+            "from": 20,
+            "id": "b6637c45-3f51-432f-8259-7380ef00b9a4",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16027,
+            "to": 16,
+            "topicId": "8266b43f-17a4-46ea-8fa8-c6a8466946e9"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608242469209,
+          "platform": "cinco_11908",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "date": 1608242469209,
+        "dateEdited": 1608242469209,
+        "id": "bf0ba58f-c862-4434-9ce0-6b82a8906b47",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608242469209,
+          "platform": "cinco_11908",
+          "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+        },
+        "messages": [
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608242469209,
+              "platform": "cinco_11908",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608242469209,
+            "for": 2,
+            "from": 20,
+            "id": "6e33cfa5-86e6-4224-acb3-2336f8684af5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 16737,
+            "to": 4,
+            "topicId": "bf0ba58f-c862-4434-9ce0-6b82a8906b47"
+          },
+          {
+            "author": "{79F23884-4741-4C01-B238-844741DC01E8}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608242469209,
+              "platform": "cinco_11908",
+              "source": "{79F23884-4741-4C01-B238-844741DC01E8}"
+            },
+            "date": 1608242469209,
+            "for": 2,
+            "from": 4,
+            "id": "6e8356e1-8859-4d2e-aec7-28f6a4ab3c6f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 15818,
+            "to": 20,
+            "topicId": "bf0ba58f-c862-4434-9ce0-6b82a8906b47"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608234478887,
+          "platform": "cinco_11919",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "date": 1608234478887,
+        "dateEdited": 1608234478887,
+        "id": "0da4186b-5091-4df0-aaf1-367ac6dbf992",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608234478887,
+          "platform": "cinco_11919",
+          "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+        },
+        "messages": [
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608234478887,
+              "platform": "cinco_11919",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608234478887,
+            "for": 7,
+            "from": 20,
+            "id": "4e80c017-cd85-4008-aeef-4343db1d0c7b",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 4240380,
+            "to": 23,
+            "topicId": "0da4186b-5091-4df0-aaf1-367ac6dbf992"
+          },
+          {
+            "author": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608234478887,
+              "platform": "cinco_11919",
+              "source": "{6BCD2E83-E83D-440B-8D2E-83E83DE40B8B}"
+            },
+            "date": 1608234478887,
+            "for": 7,
+            "from": 23,
+            "id": "d6e4ac55-4bb9-4e2d-a574-16f329f4ed96",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3128390,
+            "to": 20,
+            "topicId": "0da4186b-5091-4df0-aaf1-367ac6dbf992"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608165114997,
+          "platform": "cinco_11908",
+          "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+        },
+        "date": 1608165114997,
+        "dateEdited": 1608165114997,
+        "id": "6bebfca7-39fa-4d5e-9e4a-c8c3d6aa5013",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608165114997,
+          "platform": "cinco_11908",
+          "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+        },
+        "messages": [
+          {
+            "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608165114997,
+              "platform": "cinco_11908",
+              "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+            },
+            "date": 1608165114997,
+            "id": "c8366767-4eae-41c4-af61-497fef6702b5",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 3122976,
+            "to": 10,
+            "topicId": "6bebfca7-39fa-4d5e-9e4a-c8c3d6aa5013"
+          },
+          {
+            "author": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608165114997,
+              "platform": "cinco_11908",
+              "source": "{3E8C3E5C-F60F-4C78-8546-452A628CAAFD}"
+            },
+            "date": 1608165114997,
+            "id": "8a6bf9ea-c0de-4ba1-abec-0d61843a6c5e",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 3051439,
+            "to": 10,
+            "topicId": "6bebfca7-39fa-4d5e-9e4a-c8c3d6aa5013"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608162963212,
+          "platform": "cinco_11914",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608162963212,
+        "dateEdited": 1608162963212,
+        "id": "54925c4f-5a94-4c45-8742-a202779e3c89",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608162963212,
+          "platform": "cinco_11914",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608162963212,
+              "platform": "cinco_11914",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608162963212,
+            "id": "283616a8-d5c9-42a2-884f-6de8a0bfe988",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 2969962,
+            "to": 9,
+            "topicId": "54925c4f-5a94-4c45-8742-a202779e3c89"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608162963212,
+              "platform": "cinco_11914",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608162963212,
+            "id": "0f2801e7-8dd7-4dc3-92d0-f02d4691235c",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 4040715,
+            "to": 9,
+            "topicId": "54925c4f-5a94-4c45-8742-a202779e3c89"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608159000379,
+          "platform": "cinco_11914",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "date": 1608159000379,
+        "dateEdited": 1608159000379,
+        "id": "56934fb3-367e-443d-a950-5a653eed1a94",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608159000379,
+          "platform": "cinco_11914",
+          "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+        },
+        "messages": [
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608159000379,
+              "platform": "cinco_11914",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608159000379,
+            "id": "0b7a6caf-b603-400b-bb64-de7e9811e130",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 4040980,
+            "to": 1,
+            "topicId": "56934fb3-367e-443d-a950-5a653eed1a94"
+          },
+          {
+            "author": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608159000379,
+              "platform": "cinco_11914",
+              "source": "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}"
+            },
+            "date": 1608159000379,
+            "id": "428438f8-e3f1-417d-bede-3176c64a78cb",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": -16027,
+            "to": 1,
+            "topicId": "56934fb3-367e-443d-a950-5a653eed1a94"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{757052CD-DD9D-4918-B052-CDDD9DD91812}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608140969155,
+          "platform": "cinco_11897",
+          "source": "{757052CD-DD9D-4918-B052-CDDD9DD91812}"
+        },
+        "date": 1608140969155,
+        "dateEdited": 1608140969155,
+        "id": "c4afc898-5ea7-444e-8429-a58c064f3409",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608140969155,
+          "platform": "cinco_11897",
+          "source": "{757052CD-DD9D-4918-B052-CDDD9DD91812}"
+        },
+        "messages": [
+          {
+            "author": "{757052CD-DD9D-4918-B052-CDDD9DD91812}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608140969155,
+              "platform": "cinco_11897",
+              "source": "{757052CD-DD9D-4918-B052-CDDD9DD91812}"
+            },
+            "date": 1608140969155,
+            "for": 3,
+            "from": 2,
+            "id": "9c96529b-126b-493a-be62-f44c92508974",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 16913,
+            "to": 20,
+            "topicId": "c4afc898-5ea7-444e-8429-a58c064f3409"
+          },
+          {
+            "author": "{757052CD-DD9D-4918-B052-CDDD9DD91812}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608140969155,
+              "platform": "cinco_11897",
+              "source": "{757052CD-DD9D-4918-B052-CDDD9DD91812}"
+            },
+            "date": 1608140969155,
+            "for": 3,
+            "from": 20,
+            "id": "139bc2c4-4c32-443d-a2bd-93cee1211745",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2977644,
+            "to": 2,
+            "topicId": "c4afc898-5ea7-444e-8429-a58c064f3409"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136344536,
+          "platform": "cinco_11908",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608136344536,
+        "dateEdited": 1608136344536,
+        "id": "16adc14d-5e14-4dbb-a029-58f62fa351bf",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136344536,
+          "platform": "cinco_11908",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136344536,
+              "platform": "cinco_11908",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136344536,
+            "for": 9,
+            "from": 20,
+            "id": "978be5a1-5dc1-491d-87e7-b0b0e552eef9",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3917232,
+            "to": 17,
+            "topicId": "16adc14d-5e14-4dbb-a029-58f62fa351bf"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136209857,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608136209857,
+        "dateEdited": 1608136209857,
+        "id": "db2e54b9-8d5c-4bfd-b28d-aee4f101215a",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136209857,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136209857,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136209857,
+            "id": "e60a0ca0-d3fc-43da-8e3d-b695ce588db4",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": 16339,
+            "to": 9,
+            "topicId": "db2e54b9-8d5c-4bfd-b28d-aee4f101215a"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136209857,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136209857,
+            "id": "cf8943b2-7ae4-4902-985f-c608badfdb3a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": 3917232,
+            "to": 9,
+            "topicId": "db2e54b9-8d5c-4bfd-b28d-aee4f101215a"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136180360,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608136180360,
+        "dateEdited": 1608136180360,
+        "id": "490f9c37-891d-4d55-9e85-bcbeb3a0144b",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136180360,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136180360,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136180360,
+            "for": 9,
+            "from": 20,
+            "id": "9e2fa8d7-1717-4a26-9125-b23414f32836",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": -16002,
+            "to": 16,
+            "topicId": "490f9c37-891d-4d55-9e85-bcbeb3a0144b"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 1,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136173301,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608136173301,
+        "dateEdited": 1608136173301,
+        "id": "2fbf664c-c80c-4039-9c1c-fa53fdba3f2a",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136173301,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136173301,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136173301,
+            "id": "9721c8f4-b8e6-4de1-8444-a1cafd28cbe8",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 178,
+            "targetId": -16002,
+            "to": 9,
+            "topicId": "2fbf664c-c80c-4039-9c1c-fa53fdba3f2a"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136173301,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136173301,
+            "id": "ce6e9e0d-7a67-45d5-adc1-e2ae49f81261",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 179,
+            "targetId": -16018,
+            "to": 9,
+            "topicId": "2fbf664c-c80c-4039-9c1c-fa53fdba3f2a"
+          }
+        ],
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136156423,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "date": 1608136156423,
+        "dateEdited": 1608136156423,
+        "id": "e3e2729c-aab3-48bb-a767-02ef06ca67d8",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136156423,
+          "platform": "cinco_11897",
+          "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+        },
+        "messages": [
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136156423,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136156423,
+            "for": 9,
+            "from": 20,
+            "id": "94ab0b20-8a27-44e0-849b-945005db845f",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3051926,
+            "to": 2,
+            "topicId": "e3e2729c-aab3-48bb-a767-02ef06ca67d8"
+          },
+          {
+            "author": "{7A944288-B44E-422C-9442-88B44EA22CD2}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136156423,
+              "platform": "cinco_11897",
+              "source": "{7A944288-B44E-422C-9442-88B44EA22CD2}"
+            },
+            "date": 1608136156423,
+            "for": 9,
+            "from": 2,
+            "id": "d377e2a5-a085-4025-a9d4-827726a074f0",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 2969962,
+            "to": 20,
+            "topicId": "e3e2729c-aab3-48bb-a767-02ef06ca67d8"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      },
+      {
+        "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+        "creationInfo": {
+          "clientAddress": null,
+          "date": 1608136147086,
+          "platform": "kona-prod-8168e49296a0a7a68eeef66f1cbb46bb5cf4b0a0",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "date": 1608136147086,
+        "dateEdited": 1608136147086,
+        "id": "ffd3f408-696d-47ad-9137-2f883e56044a",
+        "isDeleted": false,
+        "isEdited": true,
+        "lastUpdateInfo": {
+          "clientAddress": null,
+          "date": 1608136147086,
+          "platform": "kona-prod-8168e49296a0a7a68eeef66f1cbb46bb5cf4b0a0",
+          "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+        },
+        "messages": [
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136147086,
+              "platform": "kona-prod-8168e49296a0a7a68eeef66f1cbb46bb5cf4b0a0",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608136147086,
+            "for": 8,
+            "from": 4,
+            "id": "a9ec43f8-d2a3-47fa-81c9-26b36986182a",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 3115394,
+            "to": 20,
+            "topicId": "ffd3f408-696d-47ad-9137-2f883e56044a"
+          },
+          {
+            "author": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}",
+            "creationInfo": {
+              "clientAddress": null,
+              "date": 1608136147086,
+              "platform": "kona-prod-8168e49296a0a7a68eeef66f1cbb46bb5cf4b0a0",
+              "source": "{B391B18F-3BEB-4B36-91B1-8F3BEB5B36E0}"
+            },
+            "date": 1608136147086,
+            "for": 8,
+            "from": 20,
+            "id": "895577de-0469-454c-9f1f-3eab70faa694",
+            "isAlternateFormat": false,
+            "isDeleted": false,
+            "isEdited": false,
+            "messageTypeId": 188,
+            "targetId": 14924,
+            "to": 4,
+            "topicId": "ffd3f408-696d-47ad-9137-2f883e56044a"
+          }
+        ],
+        "targetId": 15,
+        "totalMessageCount": 2,
+        "type": "ACTIVITY_TRANSACTIONS"
+      }
+    ]
+  }
+}
