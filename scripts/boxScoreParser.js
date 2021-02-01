@@ -4,6 +4,7 @@ const {
     BoxscorePlayer,
 } = require("espn-fantasy-football-api/node-dev");
 const boxScores = require("../data/2020/raw_boxscores/week1BoxScore.json");
+const fs = require("fs");
 
 const myClient = new Client({ leagueId: 67314407 });
 myClient.setCookies({
@@ -22,20 +23,51 @@ teams.then(function (result) {
         });
     }
 
-    console.log("Home team " + ownerMap.get(boxScores[0].homeTeamId).name);
-    console.log("Away team " + ownerMap.get(boxScores[0].awayTeamId).name);
-    const homeRoster = boxScores[0].homeRoster;
-    const awayRoster = boxScores[0].awayRoster;
+    // object to upload to database
+    var week = new Object();
+    week.year = 2020;
+    week.weekId = 1;
+    week.boxScores = [];
 
-    var j;
-    for (j = 0; j < homeRoster.length; j++) {
-        const player = homeRoster[j];
-        console.log(
-            player.player.fullName +
-                " slotted at " +
-                player.position +
-                " scored " +
-                player.totalPoints
-        );
+    for (var k = 0; k < boxScores.length; k++) {
+        const homeRoster = boxScores[k].homeRoster;
+        const awayRoster = boxScores[k].awayRoster;
+
+        var homeRosterDb = [];
+        var awayRosterDb = [];
+        var j;
+        for (j = 0; j < homeRoster.length; j++) {
+            const player = homeRoster[j];
+            homeRosterDb.push({
+                name: player.player.fullName,
+                slot: player.position,
+                points: player.totalPoints,
+            });
+        }
+        for (j = 0; j < awayRoster.length; j++) {
+            const player = awayRoster[j];
+            awayRosterDb.push({
+                name: player.player.fullName,
+                slot: player.position,
+                points: player.totalPoints,
+            });
+        }
+
+        week.boxScores.push({
+            homeTeamId: boxScores[k].homeTeamId,
+            awayTeamId: boxScores[k].awayTeamId,
+            homeRoster: homeRosterDb,
+            awayRoster: awayRosterDb,
+        });
     }
+
+    console.log(week);
+
+    const data = JSON.stringify(week);
+    fs.writeFile("parsedBoxScore.json", data, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log("JSON data is saved.");
+    });
 });
