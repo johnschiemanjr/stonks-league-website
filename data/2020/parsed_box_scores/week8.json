@@ -1,0 +1,353 @@
+{
+  "year": 2020,
+  "weekId": 8,
+  "boxScores": [
+    {
+      "homeTeamId": 1,
+      "awayTeamId": 8,
+      "homeRoster": [
+        { "name": "Nick Chubb", "slot": "IR", "points": 0 },
+        { "name": "Austin Ekeler", "slot": "Bench", "points": 0 },
+        {
+          "name": "Allen Robinson II",
+          "slot": "WR",
+          "points": 20.700000000000003
+        },
+        { "name": "Cooper Kupp", "slot": "WR", "points": 22 },
+        { "name": "Mark Andrews", "slot": "TE", "points": 6.2 },
+        { "name": "Deebo Samuel", "slot": "Bench", "points": 0 },
+        { "name": "Joe Burrow", "slot": "Bench", "points": 18.86 },
+        { "name": "Joshua Kelley", "slot": "Bench", "points": 3.5 },
+        { "name": "Myles Gaskin", "slot": "RB", "points": 13.299999999999999 },
+        { "name": "Leonard Fournette", "slot": "RB", "points": 10.1 },
+        { "name": "Tee Higgins", "slot": "RB/WR/TE", "points": 14.4 },
+        { "name": "Justin Herbert", "slot": "QB", "points": 21.22 },
+        { "name": "Devonta Freeman", "slot": "Bench", "points": 0 },
+        { "name": "Buccaneers D/ST", "slot": "D/ST", "points": 6 },
+        { "name": "Jimmy Graham", "slot": "Bench", "points": 3.3 },
+        { "name": "Joey Slye", "slot": "K", "points": 5 },
+        { "name": "Tim Patrick", "slot": "Bench", "points": 0 }
+      ],
+      "awayRoster": [
+        { "name": "Dalvin Cook", "slot": "RB", "points": 48.599999999999994 },
+        { "name": "Kenny Golladay", "slot": "WR", "points": 0 },
+        { "name": "Travis Kelce", "slot": "TE", "points": 24.9 },
+        { "name": "Amari Cooper", "slot": "WR", "points": 1.5 },
+        { "name": "DJ Chark Jr.", "slot": "Bench", "points": 0 },
+        { "name": "David Montgomery", "slot": "RB", "points": 12.5 },
+        { "name": "Zack Moss", "slot": "Bench", "points": 20.1 },
+        {
+          "name": "Henry Ruggs III",
+          "slot": "Bench",
+          "points": 2.9000000000000004
+        },
+        {
+          "name": "Darius Slayton",
+          "slot": "Bench",
+          "points": 10.600000000000001
+        },
+        {
+          "name": "Matthew Stafford",
+          "slot": "Bench",
+          "points": 22.439999999999998
+        },
+        { "name": "Robby Anderson", "slot": "RB/WR/TE", "points": 9.8 },
+        { "name": "Patriots D/ST", "slot": "Bench", "points": 3 },
+        { "name": "Rodrigo Blankenship", "slot": "K", "points": 3 },
+        { "name": "Deshaun Watson", "slot": "Bench", "points": 0 },
+        { "name": "Chiefs D/ST", "slot": "D/ST", "points": 10 },
+        {
+          "name": "Jimmy Garoppolo",
+          "slot": "QB",
+          "points": 1.7599999999999998
+        }
+      ]
+    },
+    {
+      "homeTeamId": 9,
+      "awayTeamId": 12,
+      "homeRoster": [
+        { "name": "Derrick Henry", "slot": "RB", "points": 17.200000000000003 },
+        { "name": "Joe Mixon", "slot": "Bench", "points": 0 },
+        { "name": "George Kittle", "slot": "TE", "points": 5.9 },
+        { "name": "Terry McLaurin", "slot": "Bench", "points": 0 },
+        { "name": "Devin Singletary", "slot": "RB", "points": 10.2 },
+        { "name": "Tyler Boyd", "slot": "WR", "points": 19.6 },
+        {
+          "name": "Phillip Lindsay",
+          "slot": "Bench",
+          "points": 15.600000000000001
+        },
+        { "name": "Jerry Jeudy", "slot": "RB/WR/TE", "points": 11.3 },
+        { "name": "Mike Williams", "slot": "Bench", "points": 21 },
+        { "name": "Tom Brady", "slot": "Bench", "points": 19.060000000000002 },
+        { "name": "Ryan Tannehill", "slot": "QB", "points": 17.32 },
+        { "name": "Parris Campbell", "slot": "IR", "points": 0 },
+        { "name": "Chase Edmonds", "slot": "Bench", "points": 0 },
+        { "name": "Carlos Hyde", "slot": "Bench", "points": 0 },
+        { "name": "Brandon McManus", "slot": "K", "points": 7 },
+        { "name": "Saints D/ST", "slot": "D/ST", "points": 7 },
+        { "name": "Adam Thielen", "slot": "WR", "points": 5.7 }
+      ],
+      "awayRoster": [
+        { "name": "Lamar Jackson", "slot": "QB", "points": 14.82 },
+        { "name": "Le'Veon Bell", "slot": "RB", "points": 6.800000000000001 },
+        { "name": "Darren Waller", "slot": "TE", "points": 7.7 },
+        {
+          "name": "Michael Gallup",
+          "slot": "WR",
+          "points": 13.100000000000001
+        },
+        { "name": "Julian Edelman", "slot": "Bench", "points": 0 },
+        {
+          "name": "Rob Gronkowski",
+          "slot": "Bench",
+          "points": 14.100000000000001
+        },
+        { "name": "49ers D/ST", "slot": "D/ST", "points": -2 },
+        { "name": "Jake Elliott", "slot": "K", "points": 1 },
+        { "name": "Jamaal Williams", "slot": "RB", "points": 18.2 },
+        { "name": "J.D. McKissic", "slot": "Bench", "points": 0 },
+        { "name": "James Robinson", "slot": "Bench", "points": 0 },
+        { "name": "Tre'Quan Smith", "slot": "Bench", "points": 9.3 },
+        {
+          "name": "Rashard Higgins",
+          "slot": "RB/WR/TE",
+          "points": 2.4000000000000004
+        },
+        { "name": "Baker Mayfield", "slot": "Bench", "points": 7.78 },
+        { "name": "Curtis Samuel", "slot": "WR", "points": 21.400000000000002 }
+      ]
+    },
+    {
+      "homeTeamId": 3,
+      "awayTeamId": 6,
+      "homeRoster": [
+        {
+          "name": "Julio Jones",
+          "slot": "RB/WR/TE",
+          "points": 20.700000000000003
+        },
+        { "name": "Josh Jacobs", "slot": "RB", "points": 12.9 },
+        {
+          "name": "Todd Gurley II",
+          "slot": "RB",
+          "points": 10.600000000000001
+        },
+        { "name": "Tyler Lockett", "slot": "WR", "points": 7.300000000000001 },
+        { "name": "Marquise Brown", "slot": "Bench", "points": 7.3 },
+        { "name": "James White", "slot": "Bench", "points": 5.5 },
+        { "name": "Evan Engram", "slot": "TE", "points": 12 },
+        { "name": "Diontae Johnson", "slot": "WR", "points": 1.6 },
+        { "name": "Jamison Crowder", "slot": "Bench", "points": 0 },
+        { "name": "Tevin Coleman", "slot": "IR", "points": 2 },
+        {
+          "name": "Ben Roethlisberger",
+          "slot": "QB",
+          "points": 15.280000000000001
+        },
+        { "name": "Noah Fant", "slot": "Bench", "points": 11.7 },
+        { "name": "Colts D/ST", "slot": "D/ST", "points": 15 },
+        { "name": "Kirk Cousins", "slot": "Bench", "points": 10.4 },
+        { "name": "Chris Boswell", "slot": "K", "points": 4 },
+        { "name": "Larry Fitzgerald", "slot": "Bench", "points": 0 },
+        { "name": "Giants D/ST", "slot": "Bench", "points": 4 }
+      ],
+      "awayRoster": [
+        { "name": "Alvin Kamara", "slot": "RB", "points": 25.3 },
+        { "name": "Davante Adams", "slot": "WR", "points": 30.3 },
+        { "name": "Chris Carson", "slot": "Bench", "points": 0 },
+        { "name": "James Conner", "slot": "RB", "points": 15 },
+        { "name": "DK Metcalf", "slot": "WR", "points": 40.1 },
+        { "name": "Kyler Murray", "slot": "Bench", "points": 0 },
+        { "name": "Will Fuller V", "slot": "Bench", "points": 0 },
+        { "name": "CeeDee Lamb", "slot": "Bench", "points": 8.600000000000001 },
+        { "name": "Jared Cook", "slot": "TE", "points": 16.1 },
+        { "name": "Josh Allen", "slot": "QB", "points": 12.46 },
+        {
+          "name": "Latavius Murray",
+          "slot": "Bench",
+          "points": 6.1000000000000005
+        },
+        { "name": "Brandon Aiyuk", "slot": "RB/WR/TE", "points": 23.1 },
+        { "name": "Harrison Butker", "slot": "K", "points": 5 },
+        { "name": "Dallas Goedert", "slot": "IR", "points": 2.5 },
+        { "name": "Rams D/ST", "slot": "D/ST", "points": 8 },
+        {
+          "name": "La'Mical Perine",
+          "slot": "Bench",
+          "points": 5.300000000000001
+        },
+        { "name": "Antonio Brown", "slot": "Bench", "points": 0 }
+      ]
+    },
+    {
+      "homeTeamId": 11,
+      "awayTeamId": 4,
+      "homeRoster": [
+        { "name": "Miles Sanders", "slot": "Bench", "points": 0 },
+        { "name": "Aaron Jones", "slot": "Bench", "points": 0 },
+        { "name": "JuJu Smith-Schuster", "slot": "WR", "points": 13.7 },
+        { "name": "Calvin Ridley", "slot": "WR", "points": 7.2 },
+        { "name": "Jarvis Landry", "slot": "RB/WR/TE", "points": 9.2 },
+        { "name": "DeVante Parker", "slot": "Bench", "points": 7.3 },
+        {
+          "name": "Ronald Jones II",
+          "slot": "RB",
+          "points": 6.600000000000001
+        },
+        { "name": "Jordan Howard", "slot": "Bench", "points": 0 },
+        { "name": "Emmanuel Sanders", "slot": "Bench", "points": 0 },
+        { "name": "Carson Wentz", "slot": "QB", "points": 8.620000000000001 },
+        { "name": "Mecole Hardman", "slot": "Bench", "points": 22.6 },
+        {
+          "name": "Justin Jackson",
+          "slot": "RB",
+          "points": 17.200000000000003
+        },
+        { "name": "Ravens D/ST", "slot": "Bench", "points": 6 },
+        { "name": "Younghoe Koo", "slot": "K", "points": 13 },
+        { "name": "Browns D/ST", "slot": "D/ST", "points": 3 },
+        { "name": "Hayden Hurst", "slot": "TE", "points": 10.4 }
+      ],
+      "awayRoster": [
+        { "name": "Clyde Edwards-Helaire", "slot": "RB", "points": 6.1 },
+        { "name": "Chris Godwin", "slot": "Bench", "points": 0 },
+        { "name": "Courtland Sutton", "slot": "IR", "points": 0 },
+        { "name": "Melvin Gordon III", "slot": "RB", "points": 10.7 },
+        { "name": "Raheem Mostert", "slot": "Bench", "points": 0 },
+        {
+          "name": "Hunter Henry",
+          "slot": "Bench",
+          "points": 7.300000000000001
+        },
+        { "name": "Jalen Reagor", "slot": "RB/WR/TE", "points": 13.2 },
+        { "name": "Alexander Mattison", "slot": "Bench", "points": 0.8 },
+        { "name": "Chase Claypool", "slot": "WR", "points": 13.2 },
+        { "name": "Jonnu Smith", "slot": "TE", "points": 4.9 },
+        { "name": "Ryan Succop", "slot": "K", "points": 15 },
+        { "name": "Jerick McKinnon", "slot": "Bench", "points": 13.9 },
+        { "name": "Christian Kirk", "slot": "Bench", "points": 0 },
+        { "name": "Chargers D/ST", "slot": "D/ST", "points": 2 },
+        { "name": "Derek Carr", "slot": "QB", "points": 12.540000000000003 },
+        { "name": "Denzel Mims", "slot": "Bench", "points": 6.2 },
+        { "name": "Corey Davis", "slot": "WR", "points": 26.8 }
+      ]
+    },
+    {
+      "homeTeamId": 7,
+      "awayTeamId": 10,
+      "homeRoster": [
+        { "name": "DJ Moore", "slot": "WR", "points": 7.5 },
+        { "name": "Robert Woods", "slot": "WR", "points": 28.4 },
+        { "name": "Antonio Gibson", "slot": "Bench", "points": 0 },
+        { "name": "D'Andre Swift", "slot": "RB", "points": 5.300000000000001 },
+        { "name": "T.J. Hockenson", "slot": "TE", "points": 13.5 },
+        { "name": "Steven Sims Jr.", "slot": "IR", "points": 0 },
+        { "name": "Benny Snell Jr.", "slot": "Bench", "points": 0 },
+        { "name": "Bears D/ST", "slot": "D/ST", "points": 0 },
+        { "name": "Laviska Shenault Jr.", "slot": "Bench", "points": 0 },
+        { "name": "Stephen Gostkowski", "slot": "K", "points": 1 },
+        { "name": "Preston Williams", "slot": "Bench", "points": 3.5 },
+        { "name": "Teddy Bridgewater", "slot": "QB", "points": 12.04 },
+        { "name": "Trey Burton", "slot": "Bench", "points": 10.1 },
+        {
+          "name": "David Moore",
+          "slot": "Bench",
+          "points": 13.600000000000001
+        },
+        { "name": "John Brown", "slot": "Bench", "points": 3.1 },
+        {
+          "name": "Darrell Henderson Jr.",
+          "slot": "RB",
+          "points": 6.800000000000001
+        },
+        { "name": "Nelson Agholor", "slot": "RB/WR/TE", "points": 0 }
+      ],
+      "awayRoster": [
+        { "name": "DeAndre Hopkins", "slot": "Bench", "points": 0 },
+        { "name": "Tyreek Hill", "slot": "WR", "points": 25.8 },
+        { "name": "Zach Ertz", "slot": "IR", "points": 0 },
+        { "name": "David Johnson", "slot": "Bench", "points": 0 },
+        { "name": "Kareem Hunt", "slot": "RB", "points": 9.3 },
+        { "name": "Sterling Shepard", "slot": "Bench", "points": 15.4 },
+        { "name": "Aaron Rodgers", "slot": "QB", "points": 22.54 },
+        { "name": "Justin Tucker", "slot": "K", "points": 8 },
+        { "name": "Steelers D/ST", "slot": "D/ST", "points": 13 },
+        { "name": "Gardner Minshew II", "slot": "Bench", "points": 0 },
+        { "name": "Mike Davis", "slot": "RB", "points": 8.700000000000001 },
+        { "name": "Eric Ebron", "slot": "TE", "points": 14.8 },
+        { "name": "Keelan Cole Sr.", "slot": "Bench", "points": 0 },
+        { "name": "Travis Fulgham", "slot": "Bench", "points": 19.8 },
+        { "name": "Boston Scott", "slot": "RB/WR/TE", "points": 9.9 },
+        { "name": "Christian McCaffrey", "slot": "Bench", "points": 0 },
+        { "name": "Stefon Diggs", "slot": "WR", "points": 15.200000000000001 }
+      ]
+    },
+    {
+      "homeTeamId": 5,
+      "awayTeamId": 2,
+      "homeRoster": [
+        { "name": "Michael Thomas", "slot": "Bench", "points": 0 },
+        { "name": "Kenyan Drake", "slot": "Bench", "points": 0 },
+        {
+          "name": "Jonathan Taylor",
+          "slot": "RB",
+          "points": 5.1000000000000005
+        },
+        { "name": "A.J. Brown", "slot": "WR", "points": 12.4 },
+        { "name": "Mark Ingram II", "slot": "Bench", "points": 0 },
+        {
+          "name": "Russell Wilson",
+          "slot": "QB",
+          "points": 28.740000000000002
+        },
+        { "name": "Mike Gesicki", "slot": "Bench", "points": 1.8 },
+        { "name": "Michael Pittman Jr.", "slot": "IR", "points": 1.6 },
+        {
+          "name": "Nyheim Hines",
+          "slot": "RB/WR/TE",
+          "points": 21.200000000000003
+        },
+        {
+          "name": "Tua Tagovailoa",
+          "slot": "Bench",
+          "points": 5.720000000000001
+        },
+        { "name": "Cole Beasley", "slot": "WR", "points": 4.4 },
+        { "name": "Matt Ryan", "slot": "Bench", "points": 17.94 },
+        { "name": "Robert Tonyan", "slot": "TE", "points": 12.9 },
+        { "name": "Eagles D/ST", "slot": "D/ST", "points": 21 },
+        { "name": "JaMycal Hasty", "slot": "Bench", "points": 10.1 },
+        { "name": "Mason Crosby", "slot": "K", "points": 2 },
+        { "name": "Ezekiel Elliott", "slot": "RB", "points": 8.3 }
+      ],
+      "awayRoster": [
+        { "name": "Mike Evans", "slot": "Bench", "points": 16.5 },
+        { "name": "Patrick Mahomes", "slot": "QB", "points": 36.64 },
+        { "name": "Cam Akers", "slot": "Bench", "points": 6.4 },
+        { "name": "Keenan Allen", "slot": "WR", "points": 21.7 },
+        {
+          "name": "J.K. Dobbins",
+          "slot": "Bench",
+          "points": 13.100000000000001
+        },
+        { "name": "N'Keal Harry", "slot": "Bench", "points": 0 },
+        { "name": "Justin Jefferson", "slot": "WR", "points": 5.6 },
+        { "name": "Bills D/ST", "slot": "D/ST", "points": 4 },
+        { "name": "Greg Zuerlein", "slot": "K", "points": 12 },
+        { "name": "Malcolm Brown", "slot": "Bench", "points": 7.7 },
+        { "name": "Tony Pollard", "slot": "Bench", "points": 8.4 },
+        { "name": "Damien Harris", "slot": "RB", "points": 16.200000000000003 },
+        {
+          "name": "A.J. Green",
+          "slot": "RB/WR/TE",
+          "points": 3.9000000000000004
+        },
+        { "name": "Giovani Bernard", "slot": "RB", "points": 22.8 },
+        { "name": "Brandin Cooks", "slot": "Bench", "points": 0 },
+        { "name": "Harrison Bryant", "slot": "TE", "points": 3.5 }
+      ]
+    }
+  ]
+}
