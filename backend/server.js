@@ -23,6 +23,10 @@ connection.once("open", () => {
     console.log("MongoDB connection successfully established.");
 });
 
+const ownersRouter = require("./routes/owners");
+
+app.use("/owners", ownersRouter);
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
