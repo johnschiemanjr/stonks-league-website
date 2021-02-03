@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const ownerSchema = new Schema(
     {
-        id: {
+        ownerId: {
             type: Number,
             required: true,
             unique: true,
