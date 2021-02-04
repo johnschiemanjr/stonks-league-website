@@ -13,7 +13,12 @@ router.route("/add").post((req, res) => {
     const espnId = req.body.espnId;
     const ownerName = req.body.ownerName;
 
-    const newOwner = new Owner({ ownerId, teamName, espnId, ownerName });
+    const newOwner = new Owner({
+        ownerId,
+        teamName,
+        espnId,
+        ownerName,
+    });
 
     newOwner
         .save()
