@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+let { BoxscoreSchema } = require("./boxscore.model.js").schema;
 const Schema = mongoose.Schema;
 
 const weekSchema = new Schema(
@@ -10,6 +11,10 @@ const weekSchema = new Schema(
         },
         weekId: {
             type: Number,
+            required: true,
+        },
+        boxscores: {
+            type: [BoxscoreSchema],
             required: true,
         },
     },
