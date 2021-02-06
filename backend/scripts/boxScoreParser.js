@@ -5,6 +5,7 @@ const {
 } = require("espn-fantasy-football-api/node-dev");
 const fs = require("fs");
 const axios = require("axios");
+const year = 2020;
 
 const myClient = new Client({ leagueId: 67314407 });
 myClient.setCookies({
@@ -23,19 +24,32 @@ teams.then(function (result) {
     });
   }
 
-  for (var x = 1; x < 17; x++) {
-    const boxScores = require("../../data/2020/raw_boxscores/week" +
-      x +
+  for (var week = 1; week < 17; week++) {
+    const boxScores = require("../../data/" +
+      year +
+      "/raw_boxscores/week" +
+      week +
       "BoxScore.json");
     // object to upload to database
-    var week = new Object();
-    week.year = 2020;
-    week.weekId = x;
-    week.boxscores = [];
 
-    for (var k = 0; k < boxScores.length; k++) {
-      const homeRoster = boxScores[k].homeRoster;
-      const awayRoster = boxScores[k].awayRoster;
+    for (
+      var scoreboardIndex = 0;
+      scoreboardIndex < boxScores.length;
+      scoreboardIndex++
+    ) {
+      var dbBoxscore = new Object();
+      dbBoxscore.homeTeamId = boxScores[scoreboardIndex].homeTeamId;
+      if (!boxScores[scoreboardIndex].awayTeamId) {
+        // assume this is a bye week
+        dbBoxscore.awayTeamId = -1;
+      } else {
+        dbBoxscore.awayTeamId = boxScores[scoreboardIndex].awayTeamId;
+      }
+      dbBoxscore.year = year;
+      dbBoxscore.week = week;
+
+      const homeRoster = boxScores[scoreboardIndex].homeRoster;
+      const awayRoster = boxScores[scoreboardIndex].awayRoster;
 
       var homeRosterDb = [];
       var awayRosterDb = [];
@@ -59,29 +73,25 @@ teams.then(function (result) {
         });
       }
 
-      week.boxscores.push({
-        homeTeamId: boxScores[k].homeTeamId,
-        awayTeamId: boxScores[k].awayTeamId,
-        homeRoster: homeRosterDb,
-        awayRoster: awayRosterDb,
-      });
+      dbBoxscore.homeRoster = homeRosterDb;
+      dbBoxscore.awayRoster = awayRosterDb;
+
+      axios
+        .post("http://localhost:5000/boxscores/add", dbBoxscore)
+        .then((res) => console.log(res.data));
     }
 
-    const data = JSON.stringify(week);
-    fs.writeFile(
-      "../../data/2020/parsed_box_scores/week" + x + ".json",
-      data,
-      (err) => {
-        if (err) {
-          throw err;
-        }
-        console.log("JSON data is saved.");
-      }
-    );
-
-    axios
-      .post("http://localhost:5000/week/add", week)
-      .then((res) => console.log(res.data));
+    // const data = JSON.stringify(week);
+    // fs.writeFile(
+    //   "../../data/2020/parsed_box_scores/week" + x + ".json",
+    //   data,
+    //   (err) => {
+    //     if (err) {
+    //       throw err;
+    //     }
+    //     console.log("JSON data is saved.");
+    //   }
+    // );
   }
 });
 
