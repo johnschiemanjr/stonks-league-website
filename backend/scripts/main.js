@@ -19,7 +19,7 @@ const leagueInfo = myClient.getLeagueInfo({ seasonId: 2020 });
 const teams = myClient.getTeamsAtWeek({ seasonId: 2020, scoringPeriodId: 0 });
 const boxScores = [];
 var j;
-for (j = 1; j < 17; j++) {
+for (j = 1; j < 2; j++) {
   console.log("Getting box scores for Week " + j);
   boxScores[j - 1] = myClient.getBoxscoreForWeek({
     seasonId: 2020,
@@ -43,6 +43,7 @@ teams.then(function (result) {
     var i;
     for (i = 0; i < values.length; i++) {
       console.log("Week " + (i + 1));
+      console.log(values[i]);
       var j;
       for (j = 0; j < values[i].length; j++) {
         if (typeof values[i][j].homeTeamId != "undefined") {
