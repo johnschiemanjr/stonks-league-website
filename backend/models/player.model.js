@@ -13,6 +13,10 @@ const playerSchema = new Schema({
     required: true,
     trim: true,
   },
+  eligibility: {
+    type: [String],
+    required: true,
+  },
   points: {
     type: Number,
     required: true,
