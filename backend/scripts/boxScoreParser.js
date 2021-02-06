@@ -4,6 +4,7 @@ const {
   BoxscorePlayer,
 } = require("espn-fantasy-football-api/node-dev");
 const fs = require("fs");
+const axios = require("axios");
 
 const myClient = new Client({ leagueId: 67314407 });
 myClient.setCookies({
@@ -30,7 +31,7 @@ teams.then(function (result) {
     var week = new Object();
     week.year = 2020;
     week.weekId = x;
-    week.boxScores = [];
+    week.boxscores = [];
 
     for (var k = 0; k < boxScores.length; k++) {
       const homeRoster = boxScores[k].homeRoster;
@@ -45,6 +46,7 @@ teams.then(function (result) {
           name: player.player.fullName,
           slot: player.position,
           points: player.totalPoints,
+          eligibility: player.player.eligiblePositions.filter(filterPositions),
         });
       }
       for (j = 0; j < awayRoster.length; j++) {
@@ -53,18 +55,17 @@ teams.then(function (result) {
           name: player.player.fullName,
           slot: player.position,
           points: player.totalPoints,
+          eligibility: player.player.eligiblePositions.filter(filterPositions),
         });
       }
 
-      week.boxScores.push({
+      week.boxscores.push({
         homeTeamId: boxScores[k].homeTeamId,
         awayTeamId: boxScores[k].awayTeamId,
         homeRoster: homeRosterDb,
         awayRoster: awayRosterDb,
       });
     }
-
-    console.log(week);
 
     const data = JSON.stringify(week);
     fs.writeFile(
@@ -77,5 +78,27 @@ teams.then(function (result) {
         console.log("JSON data is saved.");
       }
     );
+
+    axios
+      .post("http://localhost:5000/week/add", week)
+      .then((res) => console.log(res.data));
   }
 });
+
+function filterPositions(position) {
+  if (position == "WR/TE") {
+    return false;
+  } else if (position == "RB/WR") {
+    return false;
+  } else if (position == "OP") {
+    return false;
+  } else if (!position) {
+    return false;
+  } else if (position == "Bench") {
+    return false;
+  } else if (position == "IR") {
+    return false;
+  } else {
+    return true;
+  }
+}
