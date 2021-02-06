@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
+import "../stylesheets/owners-list.css";
 
 const Owner = (props) => (
   <tr>
@@ -14,13 +17,14 @@ export default class OwnersList extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { owners: [] };
+    this.state = { owners: [], defaultOption: "one" };
   }
 
   componentDidMount() {
     axios
       .get("http://localhost:5000/owners/")
       .then((response) => {
+        console.log(response);
         this.setState({ owners: response.data });
       })
       .catch((error) => {
@@ -34,10 +38,20 @@ export default class OwnersList extends Component {
     });
   }
 
+  ownerDropdownList() {
+    return ["one", "two", "three"];
+  }
+
   render() {
     return (
       <div>
-        <h3>Owners</h3>
+        <h3>John Snowzeliak (PLACEHOLDER)</h3>
+        <Dropdown
+          options={this.ownerDropdownList()}
+          value={this.state.defaultOption}
+          placeholder="Select an option"
+          className="ownerDropdown"
+        />
         <table className="table">
           <thead className="thead-light">
             <tr>
