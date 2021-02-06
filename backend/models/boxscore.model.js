@@ -1,25 +1,72 @@
 const mongoose = require("mongoose");
 
-const Player = require("./player.model.js").schema;
 const Schema = mongoose.Schema;
 
 const boxscoreSchema = new Schema({
-  homeTeamId: {
-    type: Number,
-    required: true,
-  },
-  awayTeamId: {
-    type: Number,
-    required: true,
-  },
-  homeRoster: {
-    type: [Schema.Types.ObjectId],
-    ref: "Player",
-  },
-  awayRoster: {
-    type: [Schema.Types.ObjectId],
-    ref: "Player",
-  },
+	year: {
+		type: Number,
+		required: true,
+	},
+	week: {
+		type: Number,
+		required: true,
+	},
+	homeTeamId: {
+		type: Number,
+		required: true,
+	},
+	awayTeamId: {
+		type: Number,
+		required: true,
+	},
+	homeRoster: {
+		type: [
+			{
+				name: {
+					type: String,
+					required: true,
+					trim: true,
+				},
+				slot: {
+					type: String,
+					required: true,
+					trim: true,
+				},
+				eligibility: {
+					type: [String],
+					required: true,
+				},
+				points: {
+					type: Number,
+					required: true,
+				},
+			},
+		],
+	},
+	awayRoster: {
+		type: [
+			{
+				name: {
+					type: String,
+					required: true,
+					trim: true,
+				},
+				slot: {
+					type: String,
+					required: true,
+					trim: true,
+				},
+				eligibility: {
+					type: [String],
+					required: true,
+				},
+				points: {
+					type: Number,
+					required: true,
+				},
+			},
+		],
+	},
 });
 
 const Boxscore = mongoose.model("Boxscore", boxscoreSchema);
