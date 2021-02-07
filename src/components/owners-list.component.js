@@ -17,14 +17,13 @@ export default class OwnersList extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { owners: [], defaultOption: "one" };
+    this.state = { owners: [], dropdownOption: "Select Owner" };
   }
 
   componentDidMount() {
     axios
       .get("http://localhost:5000/owners/")
       .then((response) => {
-        console.log(response);
         this.setState({ owners: response.data });
       })
       .catch((error) => {
@@ -39,7 +38,16 @@ export default class OwnersList extends Component {
   }
 
   ownerDropdownList() {
-    return ["one", "two", "three"];
+    var teamNames = [];
+    for (var i = 0; i < this.state.owners.length; i++) {
+      teamNames.push(this.state.owners[i].teamName);
+    }
+    return teamNames;
+  }
+
+  onSelect(selection) {
+    console.log("hello");
+    console.log(selection);
   }
 
   render() {
@@ -48,8 +56,8 @@ export default class OwnersList extends Component {
         <h3>John Snowzeliak (PLACEHOLDER)</h3>
         <Dropdown
           options={this.ownerDropdownList()}
-          value={this.state.defaultOption}
-          placeholder="Select an option"
+          value={this.state.dropdownOption}
+          onChange={this._onSelect}
           className="ownerDropdown"
         />
         <table className="table">
