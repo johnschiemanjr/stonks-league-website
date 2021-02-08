@@ -13,14 +13,14 @@ app.use(express.json());
 const uri = process.env.ATLAS_URI;
 
 mongoose.connect(uri, {
-	useNewUrlParser: true,
-	useCreateIndex: true,
-	useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
 });
 const connection = mongoose.connection;
 
 connection.once("open", () => {
-	console.log("MongoDB connection successfully established.");
+  console.log("MongoDB connection successfully established.");
 });
 
 const ownersRouter = require("./routes/owners");
@@ -30,5 +30,5 @@ app.use("/owners", ownersRouter);
 app.use("/boxscores", boxscoresRouter);
 
 app.listen(port, () => {
-	console.log(`Server is running on port: ${port}`);
+  console.log(`Server is running on port: ${port}`);
 });
