@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "owners owners"
+    "owner-pane regular-season"
+    "owner-pane postseason"
+    "historic historic";
+  grid-template-rows: 8% repeat(3, 1fr);
+}
+
+.grid-item {
+  background-color: #ccc;
+  border: 1px solid #ff652f;
+  padding: 20px;
+}
+
+.owners-list {
+  grid-area: owners;
+}
+
+.owner-pane {
+  grid-area: owner-pane;
+}
+
+.regular-season {
+  grid-area: regular-season;
+}
+
+.postseason {
+  grid-area: postseason;
+}
+
+.historic {
+  grid-area: historic;
+}

@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Dropdown from "react-dropdown";
-import "react-dropdown/style.css";
-import "../stylesheets/owners-list.css";
-
-import OverviewPane from "./overview-pane.component";
+import Select from "react-select";
 
 export default class OwnersList extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { owners: [], dropdownOption: "Owner Overview" };
+    this.state = { owners: [] };
 
-    this.onSelect = this.onSelect.bind(this);
+    this.handleOwnerChange = this.handleOwnerChange.bind(this);
   }
 
   componentDidMount() {
@@ -26,38 +22,24 @@ export default class OwnersList extends Component {
       });
   }
 
-  ownerDropdownList() {
-    var teamNames = [];
-    for (var i = 0; i < this.state.owners.length; i++) {
-      teamNames.push(this.state.owners[i].teamName);
-    }
-    return teamNames;
+  renderOwnerList() {
+    return this.state.owners.map((owner) => ({
+      label: owner.teamName,
+      value: owner,
+    }));
   }
 
-  onSelect(selection) {
-    const owners = this.state.owners.filter((owner) => {
-      return owner.teamName === selection.value;
-    });
-    this.setState({ dropdownOption: owners[0].teamName });
+  handleOwnerChange(selectedOption) {
+    console.log(selectedOption);
   }
 
   render() {
     return (
-      <div id="parent-div">
-        <div id="ownername-div">
-          <h3>{this.state.dropdownOption}</h3>
-        </div>
-        <div id="dropdown-div">
-          <Dropdown
-            options={this.ownerDropdownList()}
-            placeholder="Select Owner"
-            onChange={this.onSelect}
-            className="ownerDropdown"
-          />
-        </div>
-        <div id="overview-pane-div">
-          <OverviewPane />
-        </div>
+      <div>
+        <Select
+          options={this.renderOwnerList()}
+          onChange={this.handleOwnerChange}
+        />
       </div>
     );
   }
