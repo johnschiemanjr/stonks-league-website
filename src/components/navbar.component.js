@@ -15,6 +15,11 @@ export default class Navbar extends Component {
                 Owner Overview
               </Link>
             </li>
+            <li className="navbar-item">
+              <Link to="/" className="nav-link">
+                Head to Head
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
