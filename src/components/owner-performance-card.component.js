@@ -70,7 +70,7 @@ class LowerInfoCard extends Component {
 
 export default class OwnerPerformanceCard extends Component {
     render() {
-        const win = 75;
+        const win = 93.75;
         return (
             <div className="card">
                 <div className="card-header">{this.props.cardTitle}</div>
