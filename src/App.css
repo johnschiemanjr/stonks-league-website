@@ -4,9 +4,11 @@
   grid-template-areas:
     "owners owners"
     "owner-pane regular-season"
+    "owner-pane regular-season"
+    "owner-pane postseason"
     "owner-pane postseason"
     "historic historic";
-  grid-template-rows: 8% repeat(3, 1fr);
+  grid-template-rows: 8% repeat(5, 1fr);
 }
 
 .grid-item {
@@ -42,4 +44,27 @@
 
 .lower-row {
   margin-top: 0.05%;
+}
+
+.owner-pane-info-card {
+  border: none;
+  background-color: #343a40;
+}
+
+.owner-pane {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.owner-pane-header {
+  font-weight: bold;
+}
+
+.owner-pane-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.owner-pane-column > div {
+  flex: 1;
 }
