@@ -1,26 +1,29 @@
 import React, { Component } from "react";
 
 import OwnersList from "./owners-list.component";
-import OverviewPage from "./overview-pane.component.js";
+import OverviewPane from "./overview-pane.component.js";
 import OwnerPerformanceCard from "./owner-performance-card.component.js";
 
 export default class OwnerPage extends Component {
     render() {
         return (
-            <div className="grid-container">
-                <div className="grid-item owners-list">
-                    <OwnersList />
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-sm-4 m-3">
+                        <OverviewPane teamName="John Snowzeliak" />
+                    </div>
+                    <div className="col-sm-7 mt-3">
+                        <div className="container">
+                            <div className="mb-3">
+                                <OwnerPerformanceCard cardTitle="Regular Season Performance" />
+                            </div>
+                            <div className="mb-3">
+                                <OwnerPerformanceCard cardTitle="Playoff Performance" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="grid-item owner-pane">
-                    <OverviewPage teamName="John Snowzeliak" />
-                </div>
-                <div className="grid-item regular-season">
-                    <OwnerPerformanceCard cardTitle="Regular Season Performance" />
-                </div>
-                <div className="grid-item postseason">
-                    <OwnerPerformanceCard cardTitle="Playoff Performance" />
-                </div>
-                <div className="grid-item historic">Historic Performance</div>
+                <div>Historic Performance</div>
             </div>
         );
     }
