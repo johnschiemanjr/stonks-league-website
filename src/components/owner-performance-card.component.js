@@ -81,7 +81,7 @@ export default class OwnerPerformanceCard extends Component {
                     <UpperInfoCard title="Ties" content={0} />
                 </div>
                 <br />
-                <div className="row lower-row">
+                <div className="row">
                     <LowerInfoCard
                         title="Regular Season Championships"
                         content="-"

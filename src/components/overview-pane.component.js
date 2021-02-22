@@ -24,7 +24,7 @@ export default class OverviewPane extends Component {
                 <div className="card-header">{this.props.teamName}</div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-lg-4 ">
+                        <div className="col-sm-4 ">
                             <InfoCard title="Seasons" content={1} />
                             <InfoCard title="Record" content="6-7-0" />
                             <InfoCard title="Current Win Streak" content="W1" />
@@ -40,10 +40,10 @@ export default class OverviewPane extends Component {
                             <InfoCard title="Seasons" content={1} />
                             <InfoCard title="Seasons" content={1} />
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-sm-4">
                             <InfoCard title="Seasons" content={1} />
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-sm-4">
                             <InfoCard title="Seasons" content={1} />
                         </div>
                     </div>
