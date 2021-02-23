@@ -7,19 +7,14 @@ router.route("/year/:year/week/:week").get((req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
-router.route("/team/:teamId").get((req, res) => {
+router.route("/ownerBoxscores/:ownerId").get((req, res) => {
   Boxscore.find()
-    .or([{ homeTeamId: req.params.teamId }, { awayTeamId: req.params.teamId }])
+    .or([
+      { homeTeamId: req.params.ownerId },
+      { awayTeamId: req.params.ownerId },
+    ])
     .then((boxscores) => {
-      var teamBoxscores = [];
-      for (var i = 0; i < boxscores.length; i++) {
-        if (boxscores[i].homeTeamId == req.params.teamId) {
-          teamBoxscores.push(boxscores[i].homeRoster);
-        } else {
-          teamBoxscores.push(boxscores[i].awayRoster);
-        }
-      }
-      res.json(teamBoxscores);
+      res.json(getOwnerOverview(boxscores, req.params.ownerId));
     })
     .catch((err) => res.status(400).json("Error: " + err));
 });
@@ -46,5 +41,51 @@ router.route("/add").post((req, res) => {
     .then(() => res.json("Boxscore added!"))
     .catch((err) => res.status(400).json("Error: " + err));
 });
+
+function getOwnerOverview(boxscores, ownerId) {
+  var ownerOverview = new Object();
+  var seasons = [];
+  ownerOverview.wins = 0;
+  ownerOverview.losses = 0;
+  ownerOverview.ties = 0;
+
+  for (var i = 0; i < boxscores.length; i++) {
+    // Set required fields and make calculations.
+    const boxscore = boxscores[i];
+    const homeTeamScore = calculateScore(boxscore.homeRoster);
+    const awayTeamScore = calculateScore(boxscore.awayRoster);
+
+    // Calculate number of seasons in league.
+    if (seasons.indexOf(boxscore.year) === -1) {
+      seasons.push(boxscore.year);
+    }
+
+    // Calculate wins, losses, and ties
+    if (homeTeamScore === awayTeamScore) {
+      ownerOverview.ties++;
+    } else if (
+      (boxscore.homeTeamId == ownerId && homeTeamScore > awayTeamScore) ||
+      (boxscore.awayTeamId == ownerId && awayTeamScore > homeTeamScore)
+    ) {
+      ownerOverview.wins++;
+    } else {
+      ownerOverview.losses++;
+    }
+  }
+
+  ownerOverview.seasons = seasons.length;
+  return ownerOverview;
+}
+
+function calculateScore(roster) {
+  var score = 0;
+  for (var i = 0; i < roster.length; i++) {
+    const position = roster[i].slot;
+    if (position !== "Bench" && position !== "IR") {
+      score += roster[i].points;
+    }
+  }
+  return score;
+}
 
 module.exports = router;
