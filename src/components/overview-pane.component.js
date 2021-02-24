@@ -46,12 +46,12 @@ export default class OverviewPane extends Component {
                                 info="2016 Week 10 - 2016 Week 5"
                             />
                             <InfoCard
-                                title="Highest Win Margin"
+                                title="Best Win"
                                 content={85.85}
                                 info="2019 Week 4 vs Team Name"
                             />
                             <InfoCard
-                                title="Highest Loss Margin"
+                                title="Worst Loss"
                                 content={85.85}
                                 info="2019 Week 4 vs Team Name"
                             />
@@ -78,12 +78,12 @@ export default class OverviewPane extends Component {
                                 info="2016 Week 10 - 2016 Week 5"
                             />
                             <InfoCard
-                                title="Lowest Win Margin"
+                                title="Closest Win"
                                 content={85.85}
                                 info="2019 Week 4 vs Team Name"
                             />
                             <InfoCard
-                                title="Lowest Loss Margin"
+                                title="Closest Loss"
                                 content={85.85}
                                 info="2019 Week 4 vs Team Name"
                             />
