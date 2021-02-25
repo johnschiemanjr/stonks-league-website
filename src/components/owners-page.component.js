@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import OwnersList from "./owners-list.component";
+//import OwnersList from "./owners-list.component";
 import OverviewPane from "./overview-pane.component.js";
 import OwnerPerformanceCard from "./owner-performance-card.component.js";
 

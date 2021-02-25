@@ -65,20 +65,7 @@ function getOwnerOverview(boxscores, ownerId) {
   ownerOverview.closestLoss = { difference: 0 };
   ownerOverview.totalPoints = 0;
   ownerOverview.totalPointsAgainst = 0;
-  ownerOverview.streak = {
-    currentStatus: "W",
-    currentStreak: 0,
-    longLosing: 0,
-    longLosingYearStart: 0,
-    longLosingYearEnd: 0,
-    longLosingWeekStart: 0,
-    longLosingWeekEnd: 0,
-    longWinningYearStart: 0,
-    longWinningYearEnd: 0,
-    longWinningWeekStart: 0,
-    longWinningWeekEnd: 0,
-    longWinning: 0,
-  };
+  ownerOverview.streak = { currentStatus: "W" };
 
   var nonByeWeeks = 0;
   var winLossArray = [];
@@ -137,28 +124,19 @@ function getOwnerOverview(boxscores, ownerId) {
     ownerOverview.totalPoints += ownerScore;
   }
 
-  var result;
-  var size = 1;
-  var max_size = 1;
-  var startWeek;
-  var endWeek;
-  for (var i = 0; i < winLossArray.length; i++) {
-    if (i > 0) {
-      const winLossEntry = winLossArray[i];
-      const previous = winLossArray[i - 1];
-      if (winLossEntry.result === previous.result) {
-        size++;
-        if (size > max_size) {
-          max_size = size;
-        }
-      } else {
-        size = 0;
-        endWeek = previous.week;
-      }
-    }
-  }
+  const winStreak = getStreak("W", winLossArray);
+  const lossStreak = getStreak("L", winLossArray);
 
-  console.log(max_size + " from " + startWeek + " to " + endWeek);
+  ownerOverview.streak.longLosing = lossStreak.longStreak;
+  ownerOverview.streak.longLosingYearStart = lossStreak.startYear;
+  ownerOverview.streak.longLosingYearEnd = lossStreak.endYear;
+  ownerOverview.streak.longLosingWeekStart = lossStreak.startWeek;
+  ownerOverview.streak.longLosingWeekEnd = lossStreak.endWeek;
+  ownerOverview.streak.longWinningYearStart = winStreak.startYear;
+  ownerOverview.streak.longWinningYearEnd = winStreak.endYear;
+  ownerOverview.streak.longWinningWeekStart = winStreak.startWeek;
+  ownerOverview.streak.longWinningWeekEnd = winStreak.endWeek;
+  ownerOverview.streak.longWinning = winStreak.longStreak;
 
   ownerOverview.seasons = seasons.length;
   ownerOverview.averagePoints = ownerOverview.totalPoints / boxscores.length;
@@ -302,6 +280,51 @@ function setLongStreaks(
     // A loss
     winLossArray.push({ result: "L", year: year, week: week });
   }
+}
+
+function getStreak(result, winLossArray) {
+  var streak = 0;
+  var longStreak = 0;
+  var startWeek = winLossArray[0].week;
+  var endWeek = winLossArray[0].week;
+  var startYear = winLossArray[0].year;
+  var startYear = winLossArray[0].year;
+  var tempStartWeek = startWeek;
+  var tempStartYear = startYear;
+  var streakWasSet = false;
+
+  for (var i = 0; i < winLossArray.length; i++) {
+    const winLossElement = winLossArray[i];
+    if (winLossElement.result === result) {
+      if (streak === 0) {
+        tempStartWeek = winLossElement.week;
+        tempStartYear = winLossElement.year;
+      }
+      streak++;
+      if (streak > longStreak) {
+        longStreak = streak;
+        startWeek = tempStartWeek;
+        startYear = tempStartYear;
+        streakWasSet = true;
+      }
+    } else {
+      if (streakWasSet) {
+        streakWasSet = false;
+        if (i > 0) {
+          endWeek = winLossArray[i - 1].week;
+          endYear = winLossArray[i - 1].year;
+        }
+      }
+      streak = 0;
+    }
+  }
+  return {
+    longStreak: longStreak,
+    startWeek: startWeek,
+    startYear: startYear,
+    endWeek: endWeek,
+    endYear: endYear,
+  };
 }
 
 module.exports = router;
