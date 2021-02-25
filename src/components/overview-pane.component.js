@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "../stylesheets/owner-pane.component.css";
 
 class InfoCard extends Component {
@@ -24,7 +25,33 @@ class InfoCard extends Component {
 }
 
 export default class OverviewPane extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { ownerOverview: [], isLoading: true };
+    }
+
+    componentDidMount() {
+        this.setState({ isLoading: true });
+        axios
+            .get("http://localhost:5000/boxscores/ownerBoxscores/1")
+            .then((response) => {
+                this.setState({
+                    ownerOverview: response.data,
+                    isLoading: false,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
     render() {
+        if (this.state.isLoading) {
+            return <p>Loading ...</p>;
+        }
+
+        console.log(this.state.ownerOverview.bestWin.difference);
         return (
             <div className="card text-white bg-dark">
                 <div className="card-header">{this.props.teamName}</div>
@@ -33,10 +60,18 @@ export default class OverviewPane extends Component {
                         <div className="col-sm-6">
                             <InfoCard title="Seasons" content={1} />
                             <InfoCard title="Current Streak" content="W1" />
-                            <InfoCard title="Average Points" content={116.45} />
+                            <InfoCard
+                                title="Average Points"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.averagePoints *
+                                            100
+                                    ) / 100
+                                ).toFixed(2)}
+                            />
                             <InfoCard
                                 title="Highest Score"
-                                content={175.85}
+                                content="hi"
                                 info="2016 Week 10 vs Team Name"
                             />
                             <InfoCard title="Total Points" content={1561.34} />
