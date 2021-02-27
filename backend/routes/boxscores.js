@@ -51,7 +51,6 @@ function getOwnerOverview(boxscores, ownerId) {
     return boxscore1.year > boxscore2.year ? 1 : -1;
   });
 
-  //TODO Account for byes
   var ownerOverview = new Object();
   var seasons = [];
   ownerOverview.wins = 0;
@@ -101,6 +100,7 @@ function getOwnerOverview(boxscores, ownerId) {
         ownerScore,
         opposingScore,
         boxscore.week,
+        boxscore.year,
         OPPOSING_OWNER_ID
       );
       //Set streaks
@@ -119,7 +119,13 @@ function getOwnerOverview(boxscores, ownerId) {
     // Calculate number of seasons in league.
     setSeasons(seasons, boxscore.year);
     // Calculate max and min scores
-    setMaxAndMin(ownerOverview, ownerScore, boxscore.week, OPPOSING_OWNER_ID);
+    setMaxAndMin(
+      ownerOverview,
+      ownerScore,
+      boxscore.week,
+      boxscore.year,
+      OPPOSING_OWNER_ID
+    );
     // Add total points
     ownerOverview.totalPoints += ownerScore;
   }
@@ -172,10 +178,11 @@ function setRecord(ownerOverview, ownerScore, opposingScore) {
   }
 }
 
-function setMaxAndMin(ownerOverview, ownerScore, week, opposingOwnerId) {
+function setMaxAndMin(ownerOverview, ownerScore, week, year, opposingOwnerId) {
   if (ownerScore > ownerOverview.highScore.score) {
     ownerOverview.highScore.score = ownerScore;
     ownerOverview.highScore.week = week;
+    ownerOverview.highScore.year = year;
     ownerOverview.highScore.opposingTeam = opposingOwnerId;
   }
   if (
@@ -184,6 +191,7 @@ function setMaxAndMin(ownerOverview, ownerScore, week, opposingOwnerId) {
   ) {
     ownerOverview.lowScore.score = ownerScore;
     ownerOverview.lowScore.week = week;
+    ownerOverview.lowScore.year = year;
     ownerOverview.lowScore.opposingTeam = opposingOwnerId;
   }
 }
@@ -194,6 +202,7 @@ function setBestsAndWorsts(
   ownerScore,
   opposingScore,
   week,
+  year,
   opposingOwnerId
 ) {
   if (matchupMargin > 0) {
@@ -204,6 +213,7 @@ function setBestsAndWorsts(
     ) {
       ownerOverview.bestWin.difference = matchupMargin;
       ownerOverview.bestWin.week = week;
+      ownerOverview.bestWin.year = year;
       ownerOverview.bestWin.opposingTeam = opposingOwnerId;
     }
     if (
@@ -212,6 +222,7 @@ function setBestsAndWorsts(
     ) {
       ownerOverview.closestWin.difference = matchupMargin;
       ownerOverview.closestWin.week = week;
+      ownerOverview.closestWin.year = year;
       ownerOverview.closestWin.opposingTeam = opposingOwnerId;
     }
   } else if (matchupMargin < 0) {
@@ -222,6 +233,7 @@ function setBestsAndWorsts(
     ) {
       ownerOverview.closestLoss.difference = matchupMargin;
       ownerOverview.closestLoss.week = week;
+      ownerOverview.closestLoss.year = year;
       ownerOverview.closestLoss.opposingTeam = opposingOwnerId;
     }
     if (
@@ -230,6 +242,7 @@ function setBestsAndWorsts(
     ) {
       ownerOverview.worstLoss.difference = matchupMargin;
       ownerOverview.worstLoss.week = week;
+      ownerOverview.worstLoss.year = year;
       ownerOverview.worstLoss.opposingTeam = opposingOwnerId;
     }
   }
@@ -306,6 +319,8 @@ function getStreak(result, winLossArray) {
         startWeek = tempStartWeek;
         startYear = tempStartYear;
         streakWasSet = true;
+        endWeek = winLossArray[winLossArray.length - 1].week;
+        endYear = winLossArray[winLossArray.length - 1].year;
       }
     } else {
       if (streakWasSet) {

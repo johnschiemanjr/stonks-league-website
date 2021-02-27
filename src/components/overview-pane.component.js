@@ -8,9 +8,9 @@ class InfoCard extends Component {
             <div className="text-center card-body owner-pane-card">
                 <div>
                     <div>
-                        <h5 className="owner-pane-header">
+                        <div className="owner-pane-header">
                             {this.props.title}:
-                        </h5>
+                        </div>
                         <div>{this.props.content}</div>
                         {typeof this.props.info !== "undefined" && (
                             <div className="owner-pane-info">
@@ -28,22 +28,25 @@ export default class OverviewPane extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { ownerOverview: [], isLoading: true };
+        this.state = { ownerOverview: {}, owners: [], isLoading: true };
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         this.setState({ isLoading: true });
-        axios
-            .get("http://localhost:5000/boxscores/ownerBoxscores/1")
-            .then((response) => {
-                this.setState({
-                    ownerOverview: response.data,
-                    isLoading: false,
-                });
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        // Make first two requests
+        const requestString =
+            "http://localhost:5000/boxscores/ownerBoxscores/" +
+            this.props.ownerId;
+        const [ownerOverviewResponse, ownersResponse] = await Promise.all([
+            axios.get(requestString),
+            axios.get("http://localhost:5000/owners"),
+        ]);
+
+        this.setState({
+            ownerOverview: ownerOverviewResponse.data,
+            owners: ownersResponse.data,
+            isLoading: false,
+        });
     }
 
     render() {
@@ -51,15 +54,31 @@ export default class OverviewPane extends Component {
             return <p>Loading ...</p>;
         }
 
-        console.log(this.state.ownerOverview.bestWin.difference);
         return (
             <div className="card text-white bg-dark">
-                <div className="card-header">{this.props.teamName}</div>
+                <div className="card-header">
+                    {
+                        this.state.owners.find(
+                            (x) => x.ownerId === this.props.ownerId
+                        ).teamName
+                    }
+                </div>
                 <div className="card-body">
                     <div className="row">
                         <div className="col-sm-6">
-                            <InfoCard title="Seasons" content={1} />
-                            <InfoCard title="Current Streak" content="W1" />
+                            <InfoCard
+                                title="Seasons"
+                                content={this.state.ownerOverview.seasons}
+                            />
+                            <InfoCard
+                                title="Current Streak"
+                                content={
+                                    this.state.ownerOverview.streak
+                                        .currentStatus +
+                                    this.state.ownerOverview.streak
+                                        .currentStreak
+                                }
+                            />
                             <InfoCard
                                 title="Average Points"
                                 content={(
@@ -71,56 +90,221 @@ export default class OverviewPane extends Component {
                             />
                             <InfoCard
                                 title="Highest Score"
-                                content="hi"
-                                info="2016 Week 10 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.highScore
+                                            .score * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.highScore.year +
+                                    " Week " +
+                                    this.state.ownerOverview.highScore.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.highScore
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
-                            <InfoCard title="Total Points" content={1561.34} />
+                            <InfoCard
+                                title="Total Points"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.totalPoints *
+                                            100
+                                    ) / 100
+                                ).toFixed(2)}
+                            />
                             <InfoCard
                                 title="Longest Winning Streak"
-                                content={4}
-                                info="2016 Week 10 - 2016 Week 5"
+                                content={
+                                    this.state.ownerOverview.streak.longWinning
+                                }
+                                info={
+                                    this.state.ownerOverview.streak
+                                        .longWinningYearStart +
+                                    " Week " +
+                                    this.state.ownerOverview.streak
+                                        .longWinningWeekStart +
+                                    " - " +
+                                    this.state.ownerOverview.streak
+                                        .longWinningYearEnd +
+                                    " Week " +
+                                    this.state.ownerOverview.streak
+                                        .longWinningWeekEnd
+                                }
                             />
                             <InfoCard
                                 title="Best Win"
-                                content={85.85}
-                                info="2019 Week 4 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.bestWin
+                                            .difference * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.bestWin.year +
+                                    " Week " +
+                                    this.state.ownerOverview.bestWin.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.bestWin
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
                             <InfoCard
                                 title="Worst Loss"
-                                content={85.85}
-                                info="2019 Week 4 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.worstLoss
+                                            .difference * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.worstLoss.year +
+                                    " Week " +
+                                    this.state.ownerOverview.worstLoss.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.worstLoss
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
                         </div>
                         <div className="col-sm-6">
-                            <InfoCard title="All Time Record" content="6-7-0" />
-                            <InfoCard title="All Time Win %" content="93.75%" />
+                            <InfoCard
+                                title="All Time Record"
+                                content={
+                                    this.state.ownerOverview.wins +
+                                    "-" +
+                                    this.state.ownerOverview.losses +
+                                    "-" +
+                                    this.state.ownerOverview.ties
+                                }
+                            />
+                            <InfoCard
+                                title="All Time Win %"
+                                content={(
+                                    Math.round(
+                                        (this.state.ownerOverview.wins /
+                                            (this.state.ownerOverview.wins +
+                                                this.state.ownerOverview
+                                                    .losses +
+                                                this.state.ownerOverview
+                                                    .ties)) *
+                                            100 *
+                                            100
+                                    ) / 100
+                                ).toFixed(2)}
+                            />
                             <InfoCard
                                 title="Average Points Against"
-                                content={115.36}
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview
+                                            .averagePointsAgainst * 100
+                                    ) / 100
+                                ).toFixed(2)}
                             />
                             <InfoCard
                                 title="Lowest Score"
-                                content={74.94}
-                                info="2016 Week 10 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.lowScore
+                                            .score * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.lowScore.year +
+                                    " Week " +
+                                    this.state.ownerOverview.lowScore.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.lowScore
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
                             <InfoCard
                                 title="Total Points Against"
-                                content={1534.87}
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview
+                                            .totalPointsAgainst * 100
+                                    ) / 100
+                                ).toFixed(2)}
                             />
                             <InfoCard
                                 title="Longest Losing Streak"
-                                content={4}
-                                info="2016 Week 10 - 2016 Week 5"
+                                content={
+                                    this.state.ownerOverview.streak.longLosing
+                                }
+                                info={
+                                    this.state.ownerOverview.streak
+                                        .longLosingYearStart +
+                                    " Week " +
+                                    this.state.ownerOverview.streak
+                                        .longLosingWeekStart +
+                                    " - " +
+                                    this.state.ownerOverview.streak
+                                        .longLosingYearEnd +
+                                    " Week " +
+                                    this.state.ownerOverview.streak
+                                        .longLosingWeekEnd
+                                }
                             />
                             <InfoCard
                                 title="Closest Win"
-                                content={85.85}
-                                info="2019 Week 4 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.closestWin
+                                            .difference * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.closestWin.year +
+                                    " Week " +
+                                    this.state.ownerOverview.closestWin.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.closestWin
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
                             <InfoCard
                                 title="Closest Loss"
-                                content={85.85}
-                                info="2019 Week 4 vs Team Name"
+                                content={(
+                                    Math.round(
+                                        this.state.ownerOverview.closestLoss
+                                            .difference * 100
+                                    ) / 100
+                                ).toFixed(2)}
+                                info={
+                                    this.state.ownerOverview.closestLoss.year +
+                                    " Week " +
+                                    this.state.ownerOverview.closestLoss.week +
+                                    " vs " +
+                                    this.state.owners.find(
+                                        (x) =>
+                                            x.ownerId ===
+                                            this.state.ownerOverview.closestLoss
+                                                .opposingTeam
+                                    ).teamName
+                                }
                             />
                         </div>
                     </div>
