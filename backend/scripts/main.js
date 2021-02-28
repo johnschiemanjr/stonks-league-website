@@ -8,11 +8,15 @@ const fs = require("fs");
 // Console will print the message
 console.log("Getting data...");
 
-const myClient = new Client({ leagueId: 67314407 });
+const path = require("path");
+require("dotenv").config({
+  path: path.resolve("../.env"),
+});
+
+const myClient = new Client({ leagueId: process.env.LEAGUE_ID });
 myClient.setCookies({
-  espnS2:
-    "***REMOVED***",
-  SWID: "{1686483F-1733-4E45-A4AF-BB88A4D6B3A9}",
+  espnS2: process.env.ESPN_S2,
+  SWID: process.env.SWID,
 });
 
 const leagueInfo = myClient.getLeagueInfo({ seasonId: 2020 });
