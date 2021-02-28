@@ -26,12 +26,14 @@ router.route("/add").post((req, res) => {
   const awayTeamId = Number(req.body.awayTeamId);
   const homeRoster = req.body.homeRoster;
   const awayRoster = req.body.awayRoster;
+  const playoffStatus = req.body.playoffStatus;
 
   const newBoxscore = new Boxscore({
     year,
     week,
     homeTeamId,
     awayTeamId,
+    playoffStatus,
     homeRoster,
     awayRoster,
   });
