@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "../stylesheets/owner-pane.component.css";
+import Select from "react-select";
 
 class InfoCard extends Component {
     render() {
@@ -28,15 +29,24 @@ export default class OverviewPane extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { ownerOverview: {}, owners: [], isLoading: true };
+        this.state = {
+            ownerOverview: {},
+            owners: [],
+            isLoading: true,
+            ownerId: 1,
+        };
+
+        this.handleOwnerChange = this.handleOwnerChange.bind(this);
     }
 
     async componentDidMount() {
         this.setState({ isLoading: true });
+        console.log("Loading");
+
         // Make first two requests
         const requestString =
             "http://localhost:5000/boxscores/ownerBoxscores/" +
-            this.props.ownerId;
+            this.state.ownerId;
         const [ownerOverviewResponse, ownersResponse] = await Promise.all([
             axios.get(requestString),
             axios.get("http://localhost:5000/owners"),
@@ -49,20 +59,50 @@ export default class OverviewPane extends Component {
         });
     }
 
+    renderOwnerList() {
+        return this.state.owners.map((owner) => ({
+            label: owner.teamName,
+            value: owner,
+        }));
+    }
+
+    handleOwnerChange(selectedOption) {
+        const requestString =
+            "http://localhost:5000/boxscores/ownerBoxscores/" +
+            selectedOption.value.ownerId;
+        axios
+            .get(requestString)
+            .then((response) => {
+                this.setState({ ownerOverview: response.data });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
     render() {
+        const customStyles = {
+            option: (provided, state) => ({
+                ...provided,
+                color: state.isSelected ? "blue" : "black",
+                padding: 20,
+            }),
+        };
+
         if (this.state.isLoading) {
             return <p>Loading ...</p>;
         }
 
+        // Ideas:
+        // Expected win loss
         return (
             <div className="card text-white bg-dark">
-                <div className="card-header">
-                    {
-                        this.state.owners.find(
-                            (x) => x.ownerId === this.props.ownerId
-                        ).teamName
-                    }
-                </div>
+                <Select
+                    options={this.renderOwnerList()}
+                    onChange={this.handleOwnerChange}
+                    styles={customStyles}
+                    default="John Snowzeliak"
+                />
                 <div className="card-body">
                     <div className="row">
                         <div className="col-sm-6">
