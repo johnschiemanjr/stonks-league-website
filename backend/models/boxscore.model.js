@@ -19,6 +19,10 @@ const boxscoreSchema = new Schema({
     type: Number,
     required: true,
   },
+  playoffStatus: {
+    type: String,
+    required: false,
+  },
   homeRoster: {
     type: [
       {
