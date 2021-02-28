@@ -7,12 +7,12 @@ import Navbar from "./components/navbar.component";
 import OwnerPage from "./components/owners-page.component";
 
 function App() {
-    return (
-        <Router>
-            <Navbar />
-            <OwnerPage />
-        </Router>
-    );
+	return (
+		<Router>
+			<Navbar />
+			<OwnerPage />
+		</Router>
+	);
 }
 
 export default App;

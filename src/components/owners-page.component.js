@@ -10,7 +10,7 @@ export default class OwnerPage extends Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-4 m-3">
-                        <OverviewPane teamName="John Snowzeliak" ownerId={3} />
+                        <OverviewPane teamName="John Snowzeliak" ownerId={8} />
                     </div>
                     <div className="col-sm-7 mt-3">
                         <div className="container">
