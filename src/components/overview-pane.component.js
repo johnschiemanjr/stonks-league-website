@@ -41,12 +41,10 @@ export default class OverviewPane extends Component {
 
     async componentDidMount() {
         this.setState({ isLoading: true });
-        console.log("Loading");
 
         // Make first two requests
         const requestString =
-            "http://localhost:5000/boxscores/ownerBoxscores/" +
-            this.state.ownerId;
+            "http://localhost:5000/ownerOverview/" + this.state.ownerId;
         const [ownerOverviewResponse, ownersResponse] = await Promise.all([
             axios.get(requestString),
             axios.get("http://localhost:5000/owners"),
@@ -68,7 +66,7 @@ export default class OverviewPane extends Component {
 
     handleOwnerChange(selectedOption) {
         const requestString =
-            "http://localhost:5000/boxscores/ownerBoxscores/" +
+            "http://localhost:5000/ownerOverview/" +
             selectedOption.value.ownerId;
         axios
             .get(requestString)
@@ -92,6 +90,16 @@ export default class OverviewPane extends Component {
         if (this.state.isLoading) {
             return <p>Loading ...</p>;
         }
+
+        const wins =
+            this.state.ownerOverview.regWins +
+            this.state.ownerOverview.playoffWins;
+        const losses =
+            this.state.ownerOverview.regLosses +
+            this.state.ownerOverview.playoffLosses;
+        const ties =
+            this.state.ownerOverview.regTies +
+            this.state.ownerOverview.playoffTies;
 
         // Ideas:
         // Expected win loss
@@ -223,24 +231,13 @@ export default class OverviewPane extends Component {
                         <div className="col-sm-6">
                             <InfoCard
                                 title="All Time Record"
-                                content={
-                                    this.state.ownerOverview.wins +
-                                    "-" +
-                                    this.state.ownerOverview.losses +
-                                    "-" +
-                                    this.state.ownerOverview.ties
-                                }
+                                content={wins + "-" + losses + "-" + ties}
                             />
                             <InfoCard
                                 title="All Time Win %"
                                 content={(
                                     Math.round(
-                                        (this.state.ownerOverview.wins /
-                                            (this.state.ownerOverview.wins +
-                                                this.state.ownerOverview
-                                                    .losses +
-                                                this.state.ownerOverview
-                                                    .ties)) *
+                                        (wins / (wins + losses + ties)) *
                                             100 *
                                             100
                                     ) / 100

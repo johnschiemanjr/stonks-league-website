@@ -2,10 +2,12 @@ import React, { Component } from "react";
 
 //import OwnersList from "./owners-list.component";
 import OverviewPane from "./overview-pane.component.js";
-import OwnerPerformanceCard from "./owner-performance-card.component.js";
+import RegularSeasonPerformance from "./regular-season-performance.component.js";
+import PlayoffPerformance from "./playoff-performance.component.js";
 
 export default class OwnerPage extends Component {
     render() {
+        const OWNER_ID = 9;
         return (
             <div className="container-fluid">
                 <div className="row">
@@ -15,10 +17,10 @@ export default class OwnerPage extends Component {
                     <div className="col-sm-7 mt-3">
                         <div className="container">
                             <div className="mb-3">
-                                <OwnerPerformanceCard cardTitle="Regular Season Performance" />
+                                <RegularSeasonPerformance ownerId={OWNER_ID} />
                             </div>
                             <div className="mb-3">
-                                <OwnerPerformanceCard cardTitle="Playoff Performance" />
+                                <PlayoffPerformance ownerId={OWNER_ID} />
                             </div>
                         </div>
                     </div>
