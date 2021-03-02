@@ -1,55 +1,22 @@
 import React, { Component } from "react";
-import axios from "axios";
 import WinRateCard from "./win-rate-card.component.js";
 import UpperInfoCard from "./upper-info-card.component.js";
 import LowerInfoCard from "./lower-info-card.component.js";
 
 export default class RegularSeasonPerformance extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            ownerOverview: {},
-            seasons: [],
-            isLoading: true,
-        };
-    }
-
-    async componentDidMount() {
-        this.setState({ isLoading: true });
-
-        // Make first two requests
-        const ownerOverviewRequestString =
-            "http://localhost:5000/ownerOverview/" + this.props.ownerId;
-        const [ownerOverviewResponse, seasonsResponse] = await Promise.all([
-            axios.get(ownerOverviewRequestString),
-            axios.get("http://localhost:5000/seasons/"),
-        ]);
-
-        this.setState({
-            ownerOverview: ownerOverviewResponse.data,
-            seasons: seasonsResponse.data,
-            isLoading: false,
-        });
-    }
-
     render() {
-        if (this.state.isLoading) {
-            return <p>Loading ...</p>;
-        }
+        const wins = this.props.ownerOverview.regWins;
+        const losses = this.props.ownerOverview.regLosses;
+        const ties = this.props.ownerOverview.regTies;
 
-        const wins = this.state.ownerOverview.regWins;
-        const losses = this.state.ownerOverview.regLosses;
-        const ties = this.state.ownerOverview.regTies;
-
-        var championships = this.state.seasons
+        var championships = this.props.seasons
             .filter((season) => {
                 return season.regularSeasonChampionId === this.props.ownerId;
             })
             .map((season) => season.year)
             .join(", ");
 
-        var lastPlaces = this.state.seasons
+        var lastPlaces = this.props.seasons
             .filter((season) => {
                 return season.lastPlaceId === this.props.ownerId;
             })
