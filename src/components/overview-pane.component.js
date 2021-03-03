@@ -53,13 +53,14 @@ export default class OverviewPane extends Component {
 
         // Ideas:
         // Expected win loss
+        // A new panel to display gamelogs by season, mnaybe a seson summary
         return (
             <div className="card text-white bg-dark">
                 <Select
                     options={this.renderOwnerList()}
                     onChange={this.props.handleOwnerChange}
                     styles={customStyles}
-                    default="John Snowzeliak"
+                    defaultValue={{ label: "John Snowzeliak", value: 0 }}
                 />
                 <div className="card-body">
                     <div className="row">
