@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Select from "react-select";
 
+import HeadToHeadResults from "./head-to-head-results.component.js";
+
 export default class HeadToHeadPage extends Component {
     render() {
         const customStyles = {
@@ -30,11 +32,7 @@ export default class HeadToHeadPage extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-sm-12">
-                                <div className="card text-white bg-dark">
-                                    <div className="card-body"></div>
-                                </div>
-                            </div>
+                            <HeadToHeadResults />
                         </div>
                     </div>
                     <div className="col-sm-4 m-3">
