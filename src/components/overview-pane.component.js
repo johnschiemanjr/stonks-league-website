@@ -8,14 +8,10 @@ class InfoCard extends Component {
             <div className="text-center card-body owner-pane-card">
                 <div>
                     <div>
-                        <div className="owner-pane-header">
-                            {this.props.title}:
-                        </div>
+                        <div className="header">{this.props.title}:</div>
                         <div>{this.props.content}</div>
                         {typeof this.props.info !== "undefined" && (
-                            <div className="owner-pane-info">
-                                ({this.props.info})
-                            </div>
+                            <div className="info">({this.props.info})</div>
                         )}
                     </div>
                 </div>
@@ -53,7 +49,7 @@ export default class OverviewPane extends Component {
 
         // Ideas:
         // Expected win loss
-        // A new panel to display gamelogs by season, mnaybe a seson summary
+        // A new panel to display gamelogs by season, maybe a seson summary
         return (
             <div className="card text-white bg-dark">
                 <Select
@@ -64,7 +60,7 @@ export default class OverviewPane extends Component {
                 />
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-6">
                             <InfoCard
                                 title="Seasons"
                                 content={this.props.ownerOverview.seasons}
@@ -179,7 +175,7 @@ export default class OverviewPane extends Component {
                                 }
                             />
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-6">
                             <InfoCard
                                 title="All Time Record"
                                 content={wins + "-" + losses + "-" + ties}

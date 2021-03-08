@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Select from "react-select";
 
 import "../stylesheets/head-to-head-page.css";
-import HeadToHeadResults from "./head-to-head-results.component.js";
+import HeadToHeadResults from "../components/head-to-head-results.component.js";
 
 export default class HeadToHeadPage extends Component {
     render() {

@@ -1,11 +1,11 @@
-.hello {
-	border-style: solid;
+.test {
+    border-style: solid;
 }
 
-.game-log-table {
-	font-size: 0.85rem;
+.header {
+    color: #ffffff7a;
 }
 
-.h2h-result-title {
-	text-align: center;
+.info {
+    font-size: 0.75rem;
 }

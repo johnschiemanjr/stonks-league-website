@@ -1,0 +1,14 @@
+.game-log-table {
+    font-size: 0.85rem;
+}
+
+.head-to-head-result {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+}
+
+.team-select {
+    font-size: 0.85rem;
+}

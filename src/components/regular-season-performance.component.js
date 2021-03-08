@@ -49,7 +49,6 @@ export default class RegularSeasonPerformance extends Component {
                     <UpperInfoCard title="Losses" content={losses} />
                     <UpperInfoCard title="Ties" content={ties} />
                 </div>
-                <br />
                 <div className="row">
                     <LowerInfoCard
                         title="Regular Season Championships"

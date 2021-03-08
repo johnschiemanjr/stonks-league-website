@@ -16,7 +16,7 @@ export default class WinRateCard extends Component {
 
 	render() {
 		return (
-			<div className="col-md-3 text-center">
+			<div className="col-md-3 text-center mb-2">
 				<div className="card">
 					<div className="card-body">
 						<h5 className="card-title">{this.props.title}</h5>

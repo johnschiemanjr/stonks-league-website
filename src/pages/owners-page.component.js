@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import OverviewPane from "./overview-pane.component.js";
-import RegularSeasonPerformance from "./regular-season-performance.component.js";
-import PlayoffPerformance from "./playoff-performance.component.js";
+import OverviewPane from "../components/overview-pane.component.js";
+import RegularSeasonPerformance from "../components/regular-season-performance.component.js";
+import PlayoffPerformance from "../components/playoff-performance.component.js";
+import Spinner from "react-bootstrap/Spinner";
+
+const SERVER_IP = "localhost";
 
 export default class OwnerPage extends Component {
     constructor(props) {
@@ -24,15 +27,15 @@ export default class OwnerPage extends Component {
 
         // Make first two requests
         const requestString =
-            "http://localhost:5000/ownerOverview/" + this.state.ownerId;
+            "http://" + SERVER_IP + ":5000/ownerOverview/" + this.state.ownerId;
         const [
             ownerOverviewResponse,
             ownersResponse,
             seasonsResponse,
         ] = await Promise.all([
             axios.get(requestString),
-            axios.get("http://localhost:5000/owners"),
-            axios.get("http://localhost:5000/seasons/"),
+            axios.get("http://" + SERVER_IP + ":5000/owners"),
+            axios.get("http://" + SERVER_IP + ":5000/seasons/"),
         ]);
 
         this.setState({
@@ -45,7 +48,9 @@ export default class OwnerPage extends Component {
 
     handleOwnerChange(selectedOption) {
         const requestString =
-            "http://localhost:5000/ownerOverview/" +
+            "http://" +
+            SERVER_IP +
+            ":5000/ownerOverview/" +
             selectedOption.value.ownerId;
         axios
             .get(requestString)
@@ -62,7 +67,11 @@ export default class OwnerPage extends Component {
 
     render() {
         if (this.state.isLoading) {
-            return <p>Loading ...</p>;
+            return (
+                <Spinner animation="border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+            );
         }
 
         return (
