@@ -13,26 +13,28 @@ app.use(express.json());
 const uri = process.env.ATLAS_URI;
 
 mongoose.connect(uri, {
-	useNewUrlParser: true,
-	useCreateIndex: true,
-	useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
 });
 const connection = mongoose.connection;
 
 connection.once("open", () => {
-	console.log("MongoDB connection successfully established.");
+    console.log("MongoDB connection successfully established.");
 });
 
+const headToHeadRouter = require("./routes/head-to-head");
 const ownersRouter = require("./routes/owners");
 const ownerOverviewRouter = require("./routes/owner-overview");
 const boxscoresRouter = require("./routes/boxscores");
 const seasonSummaryRouter = require("./routes/season-summary");
 
+app.use("/headToHead", headToHeadRouter);
 app.use("/owners", ownersRouter);
 app.use("/ownerOverview", ownerOverviewRouter);
 app.use("/boxscores", boxscoresRouter);
 app.use("/seasons", seasonSummaryRouter);
 
 app.listen(port, () => {
-	console.log(`Server is running on port: ${port}`);
+    console.log(`Server is running on port: ${port}`);
 });
