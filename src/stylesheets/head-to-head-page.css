@@ -12,3 +12,8 @@
 .team-select {
     font-size: 0.85rem;
 }
+
+.placeholder {
+    height: 3rem;
+    background-color: #555;
+}
