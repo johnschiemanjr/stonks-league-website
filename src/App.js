@@ -6,6 +6,7 @@ import "./App.css";
 import Navbar from "./components/navbar.component";
 import OwnerPage from "./pages/owners-page.component";
 import HeadToHeadPage from "./pages/head-to-head-page.component";
+import StandingsPage from "./pages/standings-page.component";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Navbar />
             <Route exact path="/" component={OwnerPage} />
             <Route path="/headToHead" component={HeadToHeadPage} />
+            <Route path="/standings" component={StandingsPage} />
         </Router>
     );
 }

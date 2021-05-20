@@ -20,6 +20,11 @@ export default class Navbar extends Component {
                 Head to Head
               </Link>
             </li>
+            <li className="navbar-item">
+              <Link to="/standings" className="nav-link">
+                Standings
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
