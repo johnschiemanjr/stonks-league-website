@@ -16,7 +16,6 @@ const seasonSummarySchema = new Schema(
     playoffsChampionId: {
       type: Number,
       required: true,
-      trim: true,
     },
     runnerUpId: {
       type: Number,
@@ -25,6 +24,36 @@ const seasonSummarySchema = new Schema(
     lastPlaceId: {
       type: Number,
       required: true,
+    },
+    owners: {
+      type: [
+        {
+          ownerId: {
+            type: Number,
+            required: true,
+          },
+          wins: {
+            type: Number,
+            required: true,
+          },
+          losses: {
+            type: Number,
+            required: true,
+          },
+          ties: {
+            type: Number,
+            required: true,
+          },
+          pointsFor: {
+            type: Number,
+            required: true,
+          },
+          pointsAgainst: {
+            type: Number,
+            required: true,
+          },
+        },
+      ],
     },
   },
   {

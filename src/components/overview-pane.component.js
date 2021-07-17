@@ -49,7 +49,7 @@ export default class OverviewPane extends Component {
 
         // Ideas:
         // Expected win loss
-        // A new panel to display gamelogs by season, maybe a seson summary
+        // A new panel to display gamelogs by season, maybe a season summary
         // Playoff appearances
         return (
             <div className="card text-white bg-dark">

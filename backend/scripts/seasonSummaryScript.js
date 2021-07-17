@@ -18,6 +18,8 @@ seasonSummary.lastPlaceId = -1;
 for (var i = 0; i < teams.length; i++) {
   const owner = teams[i];
 
+  console.log(owner);
+
   if (owner.rankCalculatedFinal === FIRST_PLACE) {
     seasonSummary.playoffsChampionId = owner.id;
   } else if (owner.rankCalculatedFinal === SECOND_PLACE) {
@@ -31,6 +33,6 @@ for (var i = 0; i < teams.length; i++) {
   }
 }
 
-axios
-  .post("http://localhost:5000/season/add", seasonSummary)
-  .then((res) => console.log(res.data));
+// axios
+//   .post("http://localhost:5000/season/add", seasonSummary)
+//   .then((res) => console.log(res.data));
