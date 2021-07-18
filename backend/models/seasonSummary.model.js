@@ -44,11 +44,27 @@ const seasonSummarySchema = new Schema(
             type: Number,
             required: true,
           },
+          divisionWins: {
+            type: Number,
+            required: true,
+          },
+          divisionLosses: {
+            type: Number,
+            required: true,
+          },
+          divisionTies: {
+            type: Number,
+            required: true,
+          },
           pointsFor: {
             type: Number,
             required: true,
           },
           pointsAgainst: {
+            type: Number,
+            required: true,
+          },
+          seasonRank: {
             type: Number,
             required: true,
           },

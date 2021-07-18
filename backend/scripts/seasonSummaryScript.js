@@ -14,11 +14,36 @@ seasonSummary.regularSeasonChampionId = -1;
 seasonSummary.playoffsChampionId = -1;
 seasonSummary.runnerUpId = -1;
 seasonSummary.lastPlaceId = -1;
+seasonSummary.owners = [];
 
 for (var i = 0; i < teams.length; i++) {
+  let ownerToAdd = new Object();
   const owner = teams[i];
-
   console.log(owner);
+
+  ownerToAdd.ownerId = owner.id;
+  ownerToAdd.wins = owner.record.overall.wins;
+  ownerToAdd.losses = owner.record.overall.losses;
+  ownerToAdd.ties = owner.record.overall.ties;
+  ownerToAdd.divisionWins = owner.record.division.wins;
+  ownerToAdd.divisionLosses = owner.record.division.losses;
+  ownerToAdd.divisionTies = owner.record.division.ties;
+  ownerToAdd.pointsFor = owner.record.overall.pointsFor;
+  ownerToAdd.pointsAgainst = owner.record.overall.pointsAgainst;
+  ownerToAdd.seasonRank = owner.playoffSeed;
+
+  seasonSummary.owners.push({
+    ownerId: owner.id,
+    wins: owner.record.overall.wins,
+    losses: owner.record.overall.losses,
+    ties: owner.record.overall.ties,
+    divisionWins: owner.record.division.wins,
+    divisionLosses: owner.record.division.losses,
+    divisionTies: owner.record.division.ties,
+    pointsFor: owner.record.overall.pointsFor,
+    pointsAgainst: owner.record.overall.pointsAgainst,
+    seasonRank: owner.playoffSeed,
+  });
 
   if (owner.rankCalculatedFinal === FIRST_PLACE) {
     seasonSummary.playoffsChampionId = owner.id;
@@ -33,6 +58,11 @@ for (var i = 0; i < teams.length; i++) {
   }
 }
 
+//console.log(seasonSummary);
+
 // axios
-//   .post("http://localhost:5000/season/add", seasonSummary)
-//   .then((res) => console.log(res.data));
+//   .post("http://localhost:5000/seasons/add", seasonSummary)
+//   .then((res) => console.log(res.data))
+//   .catch((error) => {
+//     throw error;
+//   });

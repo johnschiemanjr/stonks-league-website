@@ -7,15 +7,19 @@ const SERVER_IP = "192.168.0.13";
 
 const StandingsRow = (props) => (
     <tr>
-        <td>1</td>
+        <td>{props.rank}</td>
         <td>{props.teamName}</td>
-        <td>103</td>
-        <td>16</td>
-        <td>2</td>
-        <td>3-3</td>
-        <td>.571</td>
-        <td>12652.65</td>
-        <td>12846.12</td>
+        <td>{props.wins}</td>
+        <td>{props.losses}</td>
+        <td>{props.ties}</td>
+        <td>
+            {props.divisionWins}-{props.divisionLosses}-{props.divisionTies}
+        </td>
+        <td>
+            {(props.wins / (props.wins + props.losses + props.ties)).toFixed(3)}
+        </td>
+        <td>{props.pointsFor.toFixed(2)}</td>
+        <td>{props.pointsAgainst.toFixed(2)}</td>
     </tr>
 );
 
@@ -27,7 +31,10 @@ export default class Standings extends Component {
             owners: [],
             seasons: [],
             isLoading: true,
+            season: 0,
         };
+
+        this.handleSeasonChange = this.handleSeasonChange.bind(this);
     }
 
     async componentDidMount() {
@@ -46,10 +53,53 @@ export default class Standings extends Component {
     }
 
     getRows() {
-        return this.state.owners.map((owner) => {
-            return (
-                <StandingsRow teamName={owner.teamName} key={owner.ownerId} />
-            );
+        if (this.state.season === 0) {
+            //The selection is for All seasons
+            return this.state.owners.map((owner) => {
+                return (
+                    <StandingsRow
+                        teamName={owner.teamName}
+                        key={owner.ownerId}
+                        pointsFor={0}
+                        pointsAgainst={0}
+                    />
+                );
+            });
+        } else {
+            let seasonToDisplay = this.getSeason(this.state.season);
+            return seasonToDisplay.owners
+                .sort(function (owner1, owner2) {
+                    return owner1.seasonRank - owner2.seasonRank;
+                })
+                .map((owner) => {
+                    return (
+                        <StandingsRow
+                            rank={owner.seasonRank}
+                            teamName={this.getOwnerName(owner.ownerId).teamName}
+                            wins={owner.wins}
+                            losses={owner.losses}
+                            ties={owner.ties}
+                            divisionWins={owner.divisionWins}
+                            divisionLosses={owner.divisionLosses}
+                            divisionTies={owner.divisionTies}
+                            pointsFor={owner.pointsFor}
+                            pointsAgainst={owner.pointsAgainst}
+                            key={owner.ownerId}
+                        />
+                    );
+                });
+        }
+    }
+
+    getSeason(season) {
+        return this.state.seasons.find((seasonToFind) => {
+            return seasonToFind.year === season;
+        });
+    }
+
+    getOwnerName(ownerId) {
+        return this.state.owners.find((owner) => {
+            return owner.ownerId === ownerId;
         });
     }
 
@@ -65,6 +115,12 @@ export default class Standings extends Component {
                 value: season.year,
             }))
         );
+    }
+
+    handleSeasonChange(selectedOption) {
+        this.setState({
+            season: selectedOption.value,
+        });
     }
 
     render() {
@@ -98,6 +154,7 @@ export default class Standings extends Component {
                                             label: "All",
                                             value: 0,
                                         }}
+                                        onChange={this.handleSeasonChange}
                                     />
                                 </div>
                             </div>

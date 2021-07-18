@@ -19,7 +19,10 @@ for (var i = 0; i < teams.teams.length; i++) {
 
   axios
     .post("http://localhost:5000/owners/add", owner)
-    .then((res) => console.log(res.data));
+    .then((res) => console.log(res.data))
+    .catch((error) => {
+      throw error;
+    });
 }
 
 console.log(owners);
