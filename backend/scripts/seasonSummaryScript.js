@@ -1,11 +1,13 @@
 const axios = require("axios");
 
-const YEAR = 2020;
+const YEAR = 2021;
 const FIRST_PLACE = 1;
 const SECOND_PLACE = 2;
 const LAST_PLACE = 12;
 
 const teamJson = require("../../data/" + YEAR + "/team.json");
+const settingsJson = require("../../data/" + YEAR + "/settings.json");
+const divisions = settingsJson.settings.scheduleSettings.divisions;
 const teams = teamJson.teams;
 
 var seasonSummary = new Object();
@@ -17,20 +19,8 @@ seasonSummary.lastPlaceId = -1;
 seasonSummary.owners = [];
 
 for (var i = 0; i < teams.length; i++) {
-  let ownerToAdd = new Object();
   const owner = teams[i];
   console.log(owner);
-
-  ownerToAdd.ownerId = owner.id;
-  ownerToAdd.wins = owner.record.overall.wins;
-  ownerToAdd.losses = owner.record.overall.losses;
-  ownerToAdd.ties = owner.record.overall.ties;
-  ownerToAdd.divisionWins = owner.record.division.wins;
-  ownerToAdd.divisionLosses = owner.record.division.losses;
-  ownerToAdd.divisionTies = owner.record.division.ties;
-  ownerToAdd.pointsFor = owner.record.overall.pointsFor;
-  ownerToAdd.pointsAgainst = owner.record.overall.pointsAgainst;
-  ownerToAdd.seasonRank = owner.playoffSeed;
 
   seasonSummary.owners.push({
     ownerId: owner.id,
@@ -43,6 +33,7 @@ for (var i = 0; i < teams.length; i++) {
     pointsFor: owner.record.overall.pointsFor,
     pointsAgainst: owner.record.overall.pointsAgainst,
     seasonRank: owner.playoffSeed,
+    divisionId: owner.divisionId,
   });
 
   if (owner.rankCalculatedFinal === FIRST_PLACE) {
@@ -58,11 +49,13 @@ for (var i = 0; i < teams.length; i++) {
   }
 }
 
-//console.log(seasonSummary);
+seasonSummary.divisions = new Object();
+seasonSummary.divisions = divisions;
+console.log(seasonSummary);
 
-// axios
-//   .post("http://localhost:5000/seasons/add", seasonSummary)
-//   .then((res) => console.log(res.data))
-//   .catch((error) => {
-//     throw error;
-//   });
+axios
+  .post("http://localhost:5000/seasons/add", seasonSummary)
+  .then((res) => console.log(res.data))
+  .catch((error) => {
+    throw error;
+  });

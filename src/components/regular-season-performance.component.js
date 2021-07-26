@@ -38,7 +38,7 @@ export default class RegularSeasonPerformance extends Component {
                     <WinRateCard
                         title="Win Rate"
                         winPercentage={
-                            wins + losses + ties != 0
+                            wins + losses + ties !== 0
                                 ? (
                                       Math.round(
                                           (wins / (wins + losses + ties)) *

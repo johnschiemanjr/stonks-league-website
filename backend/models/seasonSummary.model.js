@@ -25,10 +25,33 @@ const seasonSummarySchema = new Schema(
       type: Number,
       required: true,
     },
+    divisions: {
+      type: [
+        {
+          id: {
+            type: Number,
+            required: true,
+          },
+          name: {
+            type: String,
+            required: true,
+            trim: true,
+          },
+          size: {
+            type: Number,
+            required: false,
+          },
+        },
+      ],
+    },
     owners: {
       type: [
         {
           ownerId: {
+            type: Number,
+            required: true,
+          },
+          divisionId: {
             type: Number,
             required: true,
           },

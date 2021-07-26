@@ -20,6 +20,7 @@ router.route("/add").post((req, res) => {
 	const runnerUpId = Number(req.body.runnerUpId);
 	const lastPlaceId = Number(req.body.lastPlaceId);
 	const owners = req.body.owners;
+	const divisions = req.body.divisions;
 
 	const newSeasonSummary = new SeasonSummary({
 		year,
@@ -27,6 +28,7 @@ router.route("/add").post((req, res) => {
 		playoffsChampionId,
 		runnerUpId,
 		lastPlaceId,
+		divisions,
 		owners,
 	});
 
