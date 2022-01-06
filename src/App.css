@@ -9,3 +9,9 @@
 .info {
     font-size: 0.75rem;
 }
+
+@media (max-width: 800px) {
+    .table-responsive {
+        font-size: 10px !important;
+    }
+}

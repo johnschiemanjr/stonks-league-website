@@ -8,7 +8,7 @@ router.route("/:ownerId").get((req, res) => {
 			{ awayTeamId: req.params.ownerId },
 		])
 		.then((boxscores) => {
-			res.json(getOwnerOverview(boxscores, Number(req.params.ownerId)));
+			res.json(getOwnerOverview(boxscores, req.params.ownerId));
 		})
 		.catch((err) => res.status(400).json("Error: " + err));
 });
