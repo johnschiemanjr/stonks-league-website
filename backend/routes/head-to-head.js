@@ -5,20 +5,20 @@ router.route("/owner1/:owner1Id/owner2/:owner2Id").get((req, res) => {
     Boxscore.find()
         .or([
             {
-                homeTeamId: Number(req.params.owner1Id),
-                awayTeamId: Number(req.params.owner2Id),
+                homeTeamId: req.params.owner1Id,
+                awayTeamId: req.params.owner2Id,
             },
             {
-                homeTeamId: Number(req.params.owner2Id),
-                awayTeamId: Number(req.params.owner1Id),
+                homeTeamId: req.params.owner2Id,
+                awayTeamId: req.params.owner1Id,
             },
         ])
         .then((boxscores) => {
             res.json(
                 getHeadToHeadResults(
                     boxscores,
-                    Number(req.params.owner1Id),
-                    Number(req.params.owner2Id)
+                    req.params.owner1Id,
+                    req.params.owner2Id
                 )
             );
         })

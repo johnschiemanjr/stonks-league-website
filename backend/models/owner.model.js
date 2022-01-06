@@ -5,21 +5,11 @@ const Schema = mongoose.Schema;
 const ownerSchema = new Schema(
   {
     ownerId: {
-      type: Number,
+      type: String,
       required: true,
       unique: true,
     },
     teamName: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    espnId: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    ownerName: {
       type: String,
       required: true,
       trim: true,

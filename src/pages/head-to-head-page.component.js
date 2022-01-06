@@ -23,7 +23,6 @@ export default class HeadToHeadPage extends Component {
 
         this.handleOwner1Change = this.handleOwner1Change.bind(this);
         this.handleOwner2Change = this.handleOwner2Change.bind(this);
-        // this.getHeadToHeadResults = this.getHeadToHeadResults.bind(this);
     }
 
     componentDidMount() {

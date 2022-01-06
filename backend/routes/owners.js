@@ -8,16 +8,12 @@ router.route("/").get((req, res) => {
 });
 
 router.route("/add").post((req, res) => {
-  const ownerId = Number(req.body.ownerId);
+  const ownerId = req.body.ownerId;
   const teamName = req.body.teamName;
-  const espnId = req.body.espnId;
-  const ownerName = req.body.ownerName;
 
   const newOwner = new Owner({
     ownerId,
     teamName,
-    espnId,
-    ownerName,
   });
 
   newOwner

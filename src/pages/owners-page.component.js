@@ -5,7 +5,7 @@ import RegularSeasonPerformance from "../components/regular-season-performance.c
 import PlayoffPerformance from "../components/playoff-performance.component.js";
 import Spinner from "react-bootstrap/Spinner";
 
-const SERVER_IP = "192.168.0.13";
+const SERVER_IP = "localhost";
 
 export default class OwnerPage extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ export default class OwnerPage extends Component {
             ownerOverview: {},
             owners: [],
             isLoading: true,
-            ownerId: 1,
+            ownerId: "475389274678620160",
             seasons: [],
         };
 

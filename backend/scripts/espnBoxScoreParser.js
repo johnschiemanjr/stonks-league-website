@@ -1,6 +1,7 @@
 const axios = require("axios");
 const year = 2020;
 const playoffBoxscores = require("../../data/" + year + "/matchupScore.json");
+const sleeperConverter = require("./sleeperConverter");
 
 // Loop through weeks to add boxscores
 for (var week = 1; week < 17; week++) {
@@ -18,12 +19,20 @@ for (var week = 1; week < 17; week++) {
   ) {
     // Set up boxscore object to be pushed to database
     var dbBoxscore = new Object();
-    dbBoxscore.homeTeamId = boxScores[scoreboardIndex].homeTeamId;
+    //dbBoxscore.homeTeamId = boxScores[scoreboardIndex].homeTeamId;
+    // Convert from old ID to new sleeper
+    dbBoxscore.homeTeamId = sleeperConverter.oldIdToSleeper(
+      boxScores[scoreboardIndex].homeTeamId
+    );
     if (!boxScores[scoreboardIndex].awayTeamId) {
       // this is a bye week
       dbBoxscore.awayTeamId = -1;
     } else {
-      dbBoxscore.awayTeamId = boxScores[scoreboardIndex].awayTeamId;
+      //dbBoxscore.awayTeamId = boxScores[scoreboardIndex].awayTeamId;
+      // Convert from old ID to new sleeper
+      dbBoxscore.awayTeamId = sleeperConverter.oldIdToSleeper(
+        boxScores[scoreboardIndex].awayTeamId
+      );
     }
     dbBoxscore.year = year;
     dbBoxscore.week = week;

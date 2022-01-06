@@ -12,11 +12,11 @@ const boxscoreSchema = new Schema({
     required: true,
   },
   homeTeamId: {
-    type: Number,
+    type: String,
     required: true,
   },
   awayTeamId: {
-    type: Number,
+    type: String,
     required: true,
   },
   playoffStatus: {
