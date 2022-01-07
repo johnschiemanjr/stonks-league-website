@@ -33,6 +33,7 @@ module.exports = {
         var team = teamInfo.filter((team) => {
             return team.roster_id === rosterId;
         });
-        console.log(team[0].owner_id);
+
+        return team[0].owner_id;
     },
 };
