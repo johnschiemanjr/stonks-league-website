@@ -74,8 +74,12 @@ for (var week = 1; week < 17; week++) {
         continue;
       }
       if (
-        playoffBoxscores.schedule[k].home.teamId == dbBoxscore.homeTeamId &&
-        playoffBoxscores.schedule[k].away.teamId == dbBoxscore.awayTeamId &&
+        sleeperConverter.oldIdToSleeper(
+          playoffBoxscores.schedule[k].home.teamId
+        ) == dbBoxscore.homeTeamId &&
+        sleeperConverter.oldIdToSleeper(
+          playoffBoxscores.schedule[k].away.teamId
+        ) == dbBoxscore.awayTeamId &&
         playoffBoxscores.schedule[k].matchupPeriodId == dbBoxscore.week
       ) {
         // No need to add status if it's a regular season game

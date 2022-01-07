@@ -15,7 +15,7 @@ export default class OwnerPage extends Component {
             ownerOverview: {},
             owners: [],
             isLoading: true,
-            ownerId: "475389274678620160",
+            ownerId: "718800178789810176",
             seasons: [],
         };
 

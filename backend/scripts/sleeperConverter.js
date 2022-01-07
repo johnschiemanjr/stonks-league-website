@@ -26,7 +26,13 @@ module.exports = {
             return "738824204790722560";
         }
     },
-    bar: function () {
-        // whatever
+    rosterIdToUserId: function (year, rosterId) {
+        const teamInfo = require("../../data/" +
+            year +
+            "/league_team_info.json");
+        var team = teamInfo.filter((team) => {
+            return team.roster_id === rosterId;
+        });
+        console.log(team[0].owner_id);
     },
 };
