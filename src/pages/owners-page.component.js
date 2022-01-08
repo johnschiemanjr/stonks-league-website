@@ -5,7 +5,7 @@ import RegularSeasonPerformance from "../components/regular-season-performance.c
 import PlayoffPerformance from "../components/playoff-performance.component.js";
 import Spinner from "react-bootstrap/Spinner";
 
-const SERVER_IP = "localhost";
+const SERVER_IP = "192.168.0.13";
 
 export default class OwnerPage extends Component {
     constructor(props) {
@@ -104,7 +104,6 @@ export default class OwnerPage extends Component {
                         </div>
                     </div>
                 </div>
-                <div>Historic Performance</div>
             </div>
         );
     }

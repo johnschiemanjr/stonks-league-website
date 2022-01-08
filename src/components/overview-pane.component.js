@@ -28,6 +28,15 @@ export default class OverviewPane extends Component {
         }));
     }
 
+    getOwnerName(owners, id) {
+        var owner = owners.find((x) => x.ownerId === id);
+        if (owner) {
+            return owner.teamName;
+        } else {
+            return "Bye Week";
+        }
+    }
+
     render() {
         const customStyles = {
             option: (provided, state) => ({
@@ -97,12 +106,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.highScore.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.highScore
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.highScore
+                                            .opposingTeam
+                                    )
                                 }
                             />
                             <InfoCard
@@ -146,12 +154,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.bestWin.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.bestWin
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.bestWin
+                                            .opposingTeam
+                                    )
                                 }
                             />
                             <InfoCard
@@ -167,12 +174,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.worstLoss.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.worstLoss
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.worstLoss
+                                            .opposingTeam
+                                    )
                                 }
                             />
                         </div>
@@ -213,12 +219,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.lowScore.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.lowScore
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.lowScore
+                                            .opposingTeam
+                                    )
                                 }
                             />
                             <InfoCard
@@ -262,12 +267,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.closestWin.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.closestWin
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.closestWin
+                                            .opposingTeam
+                                    )
                                 }
                             />
                             <InfoCard
@@ -283,12 +287,11 @@ export default class OverviewPane extends Component {
                                     " Week " +
                                     this.props.ownerOverview.closestLoss.week +
                                     " vs " +
-                                    this.props.owners.find(
-                                        (x) =>
-                                            x.ownerId ===
-                                            this.props.ownerOverview.closestLoss
-                                                .opposingTeam
-                                    ).teamName
+                                    this.getOwnerName(
+                                        this.props.owners,
+                                        this.props.ownerOverview.closestLoss
+                                            .opposingTeam
+                                    )
                                 }
                             />
                         </div>

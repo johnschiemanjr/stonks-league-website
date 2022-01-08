@@ -39,14 +39,12 @@ export default class PlayoffPerformance extends Component {
                         title="Win Rate"
                         winPercentage={
                             wins + losses + ties !== 0
-                                ? (
-                                      Math.round(
-                                          (wins / (wins + losses + ties)) *
-                                              100 *
-                                              100
-                                      ) / 100
-                                  ).toFixed(2) + "%"
-                                : (0).toFixed(2) + "%"
+                                ? Math.round(
+                                      (wins / (wins + losses + ties)) *
+                                          100 *
+                                          100
+                                  ) / 100
+                                : 0
                         }
                     />
                     <UpperInfoCard title="Wins" content={wins} />
@@ -54,6 +52,7 @@ export default class PlayoffPerformance extends Component {
                     <UpperInfoCard title="Ties" content={ties} />
                 </div>
                 <div className="row">
+                    <LowerInfoCard title="Appearances" content={runnerUps} />
                     <LowerInfoCard
                         title="Championships"
                         content={championships}

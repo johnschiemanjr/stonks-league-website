@@ -1,32 +1,33 @@
 import React, { Component } from "react";
 
 export default class WinRateCard extends Component {
-	// Function to get gradient for win rate
-	// pickHex(color1, color2, weight) {
-	//     console.log("hello");
-	//     var w1 = weight;
-	//     var w2 = 1 - w1;
-	//     var rgb = [
-	//         Math.round(color1[0] * w1 + color2[0] * w2),
-	//         Math.round(color1[1] * w1 + color2[1] * w2),
-	//         Math.round(color1[2] * w1 + color2[2] * w2),
-	//     ];
-	//     return rgb;
-	//}
-
 	render() {
+		let style;
+		if (this.props.winPercentage < 40) {
+			style = "progress-bar bg-danger";
+		} else if (
+			this.props.winPercentage > 40 &&
+			this.props.winPercentage < 60
+		) {
+			style = "progress-bar bg-warning";
+		} else {
+			style = "progress-bar bg-success";
+		}
+
+		const winPercentageString = this.props.winPercentage.toFixed(2) + "%";
+
 		return (
 			<div className="col-md-3 text-center mb-2">
 				<div className="card">
 					<div className="card-body">
 						<h5 className="card-title">{this.props.title}</h5>
-						<p className="card-text">{this.props.winPercentage}</p>
+						<p className="card-text">{winPercentageString}</p>
 						<div className="progress">
 							<div
-								className="progress-bar"
+								className={style}
 								role="progressbar"
-								style={{ width: this.props.winPercentage }}
-								aria-valuenow={this.props.winPercentage}
+								style={{ width: winPercentageString }}
+								aria-valuenow={winPercentageString}
 								aria-valuemin="0"
 								aria-valuemax="100"
 							></div>
