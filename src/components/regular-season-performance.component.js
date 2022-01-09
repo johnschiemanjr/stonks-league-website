@@ -51,7 +51,7 @@ export default class RegularSeasonPerformance extends Component {
                     <UpperInfoCard title="Losses" content={losses} />
                     <UpperInfoCard title="Ties" content={ties} />
                 </div>
-                <div className="row">
+                <div className="row justify-content-center">
                     <LowerInfoCard
                         title="Regular Season Championships"
                         content={championships}
