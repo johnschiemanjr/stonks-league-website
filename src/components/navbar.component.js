@@ -25,6 +25,11 @@ export default class Navbar extends Component {
                 Standings
               </Link>
             </li>
+            <li className="navbar-item">
+              <Link to="/history" className="nav-link">
+                History
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
