@@ -38,4 +38,16 @@ router.route("/add").post((req, res) => {
 		.catch((err) => res.status(400).json("Error: " + err));
 });
 
+router.route("/update/:year").put((req, res) => {
+	console.log(req.params);
+	SeasonSummary.find({ year: req.params.year })
+		.then((seasonSummary) => {
+			seasonSummary[0]
+				.save()
+				.then(() => res.json("Season summary added!"))
+				.catch((err) => res.status(400).json("Error: " + err));
+		})
+		.catch((err) => res.status(400).json("Error: " + err));
+});
+
 module.exports = router;

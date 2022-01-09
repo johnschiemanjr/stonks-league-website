@@ -5,7 +5,7 @@ import RegularSeasonPerformance from "../components/regular-season-performance.c
 import PlayoffPerformance from "../components/playoff-performance.component.js";
 import Spinner from "react-bootstrap/Spinner";
 
-const SERVER_IP = "localhost";
+const SERVER_IP = "192.168.0.13";
 
 export default class OwnerPage extends Component {
     constructor(props) {
@@ -17,6 +17,7 @@ export default class OwnerPage extends Component {
             isLoading: true,
             ownerId: "718800178789810176",
             seasons: [],
+            playoffPerformance: {},
         };
 
         this.handleOwnerChange = this.handleOwnerChange.bind(this);
@@ -28,12 +29,19 @@ export default class OwnerPage extends Component {
         // Make first two requests
         const requestString =
             "http://" + SERVER_IP + ":5000/ownerOverview/" + this.state.ownerId;
+        const playoffPerformanceRequest =
+            "http://" +
+            SERVER_IP +
+            ":5000/playoffPerformance/" +
+            this.state.ownerId;
         const [
             ownerOverviewResponse,
+            playoffPerformanceResponse,
             ownersResponse,
             seasonsResponse,
         ] = await Promise.all([
             axios.get(requestString),
+            axios.get(playoffPerformanceRequest),
             axios.get("http://" + SERVER_IP + ":5000/owners"),
             axios.get("http://" + SERVER_IP + ":5000/seasons/"),
         ]);
@@ -43,6 +51,7 @@ export default class OwnerPage extends Component {
             owners: ownersResponse.data,
             isLoading: false,
             seasons: seasonsResponse.data,
+            playoffPerformance: playoffPerformanceResponse.data,
         });
     }
 
@@ -52,16 +61,27 @@ export default class OwnerPage extends Component {
             SERVER_IP +
             ":5000/ownerOverview/" +
             selectedOption.value.ownerId;
-        axios
-            .get(requestString)
-            .then((response) => {
+        const playoffPerformanceRequest =
+            "http://" +
+            SERVER_IP +
+            ":5000/playoffPerformance/" +
+            selectedOption.value.ownerId;
+        let urls = [requestString, playoffPerformanceRequest];
+
+        let requests = urls.map((url) => {
+            return axios.get(url);
+        });
+
+        Promise.all(requests)
+            .then((responses) => {
                 this.setState({
-                    ownerOverview: response.data,
+                    ownerOverview: responses[0].data,
                     ownerId: selectedOption.value.ownerId,
+                    playoffPerformance: responses[1].data,
                 });
             })
-            .catch((error) => {
-                console.log(error);
+            .catch((err) => {
+                console.log(err);
             });
     }
 
@@ -96,15 +116,14 @@ export default class OwnerPage extends Component {
                             </div>
                             <div className="mb-3">
                                 <PlayoffPerformance
-                                    ownerId={this.state.ownerId}
-                                    ownerOverview={this.state.ownerOverview}
-                                    seasons={this.state.seasons}
+                                    playoffPerformance={
+                                        this.state.playoffPerformance
+                                    }
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>Historic Performance</div>
             </div>
         );
     }

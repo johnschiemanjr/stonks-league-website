@@ -5,31 +5,20 @@ import LowerInfoCard from "./lower-info-card.component.js";
 
 export default class PlayoffPerformance extends Component {
     render() {
-        const wins = this.props.ownerOverview.playoffWins;
-        const losses = this.props.ownerOverview.playoffLosses;
-        const ties = this.props.ownerOverview.playoffTies;
-
-        var championships = this.props.seasons
-            .filter((season) => {
-                return season.playoffsChampionId === this.props.ownerId;
-            })
-            .map((season) => season.year)
-            .join(", ");
-
-        var runnerUps = this.props.seasons
-            .filter((season) => {
-                return season.runnerUpId === this.props.ownerId;
-            })
-            .map((season) => season.year)
-            .join(", ");
-
-        if (championships === undefined || championships.length === 0) {
-            championships = "-";
-        }
-
-        if (runnerUps === undefined || runnerUps.length === 0) {
-            runnerUps = "-";
-        }
+        console.log(this.props);
+        console.log(this.props.playoffPerformance.championships.join(", "));
+        const wins = this.props.playoffPerformance.wins;
+        const losses = this.props.playoffPerformance.losses;
+        const ties = this.props.playoffPerformance.ties;
+        const championships =
+            this.props.playoffPerformance.championships.length !== 0
+                ? this.props.playoffPerformance.championships.join(", ")
+                : "-";
+        const runnerUps =
+            this.props.playoffPerformance.runnerups.length !== 0
+                ? this.props.playoffPerformance.runnerups.join(", ")
+                : "-";
+        const appearances = this.props.playoffPerformance.appearances;
 
         return (
             <div className="card">
@@ -39,14 +28,12 @@ export default class PlayoffPerformance extends Component {
                         title="Win Rate"
                         winPercentage={
                             wins + losses + ties !== 0
-                                ? (
-                                      Math.round(
-                                          (wins / (wins + losses + ties)) *
-                                              100 *
-                                              100
-                                      ) / 100
-                                  ).toFixed(2) + "%"
-                                : (0).toFixed(2) + "%"
+                                ? Math.round(
+                                      (wins / (wins + losses + ties)) *
+                                          100 *
+                                          100
+                                  ) / 100
+                                : 0
                         }
                     />
                     <UpperInfoCard title="Wins" content={wins} />
@@ -54,10 +41,8 @@ export default class PlayoffPerformance extends Component {
                     <UpperInfoCard title="Ties" content={ties} />
                 </div>
                 <div className="row">
-                    <LowerInfoCard
-                        title="Championships"
-                        content={championships}
-                    />
+                    <LowerInfoCard title="Appearances" content={appearances} />
+                    <LowerInfoCard title="Gunninys" content={championships} />
                     <LowerInfoCard title="Runner Up" content={runnerUps} />
                 </div>
             </div>

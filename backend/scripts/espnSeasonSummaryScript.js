@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const YEAR = 2021;
+const YEAR = 2020;
 const FIRST_PLACE = 1;
 const SECOND_PLACE = 2;
 const LAST_PLACE = 12;
@@ -18,9 +18,9 @@ seasonSummary.runnerUpId = -1;
 seasonSummary.lastPlaceId = -1;
 seasonSummary.owners = [];
 
-for (var i = 0; i < teams.length; i++) {
+for (let i = 0; i < teams.length; i++) {
   const owner = teams[i];
-  console.log(owner);
+  //console.log(owner);
 
   seasonSummary.owners.push({
     ownerId: owner.id,
@@ -51,10 +51,10 @@ for (var i = 0; i < teams.length; i++) {
 
 seasonSummary.divisions = new Object();
 seasonSummary.divisions = divisions;
-console.log(seasonSummary);
+//console.log(seasonSummary);
 
 axios
-  .post("http://localhost:5000/seasons/add", seasonSummary)
+  .put("http://localhost:5000/seasons/update/" + "2022", seasonSummary)
   .then((res) => console.log(res.data))
   .catch((error) => {
     throw error;

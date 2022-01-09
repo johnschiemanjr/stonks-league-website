@@ -7,6 +7,18 @@ router.route("/year/:year/week/:week").get((req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
+router.route("/ownerId/:ownerId").get((req, res) => {
+  Boxscore.find()
+    .or([
+      { homeTeamId: req.params.ownerId },
+      { awayTeamId: req.params.ownerId },
+    ])
+    .then((boxscores) => {
+      res.json(boxscores);
+    })
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
 router.route("/add").post((req, res) => {
   const year = Number(req.body.year);
   const week = Number(req.body.week);
