@@ -66,6 +66,11 @@ for (let week = 1; week < 18; week++) {
 
         dbBoxscore.homeRoster = homeTeamRoster;
         dbBoxscore.awayRoster = awayTeamRoster;
+
+        if (week > 14) {
+            dbBoxscore.playoffStatus = "PLAYOFF";
+        }
+
         // Post boxscore to database
         axios
             .post("http://localhost:5000/boxscores/add", dbBoxscore)
