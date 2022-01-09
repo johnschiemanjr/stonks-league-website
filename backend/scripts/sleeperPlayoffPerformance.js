@@ -76,17 +76,17 @@ appearances.forEach((appearanceId) => {
     performance.losses = 0;
     performance.ties = 0;
     performance.appearances = 0;
-    performance.championships = 0;
-    performance.runnerups = 0;
+    performance.championships = [];
+    performance.runnerups = [];
 
     performance.ownerId = sleeperConverter.rosterIdToUserId(YEAR, appearanceId);
     performance.appearances++;
 
     if (week3Winners.indexOf(appearanceId) !== -1) {
-        performance.championships++;
+        performance.championships.push(YEAR);
     } else {
         if (week2Winners.indexOf(appearanceId) !== -1) {
-            performance.runnerups++;
+            performance.runnerups.push(YEAR);
         }
         performance.losses++;
     }
@@ -101,5 +101,55 @@ appearances.forEach((appearanceId) => {
         performance.wins++;
     }
 
-    console.log(performance);
+    postPerformance(performance);
 });
+
+function postPerformance(performance) {
+    let requestString =
+        "http://localhost:5000/playoffPerformance/" +
+        String(performance.ownerId);
+    axios
+        .get(requestString)
+        .then((response) => {
+            if (response.data.length === 0) {
+                axios
+                    .post(
+                        "http://localhost:5000/playoffPerformance/add",
+                        performance
+                    )
+                    .then((res) => console.log(res.data))
+                    .catch((error) => {
+                        throw error;
+                    });
+            } else {
+                updateAndPut(performance, response.data);
+            }
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
+
+function updateAndPut(performanceToAdd, existingPerformance) {
+    existingPerformance.wins += performanceToAdd.wins;
+    existingPerformance.losses += performanceToAdd.losses;
+    existingPerformance.ties += performanceToAdd.ties;
+    existingPerformance.appearances += performanceToAdd.appearances;
+    existingPerformance.championships = existingPerformance.championships.concat(
+        performanceToAdd.championships
+    );
+    existingPerformance.runnerups = existingPerformance.runnerups.concat(
+        performanceToAdd.runnerups
+    );
+
+    axios
+        .put(
+            "http://localhost:5000/playoffPerformance/update/" +
+                existingPerformance.ownerId,
+            existingPerformance
+        )
+        .then((res) => console.log(res.data))
+        .catch((error) => {
+            throw error;
+        });
+}

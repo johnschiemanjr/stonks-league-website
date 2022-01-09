@@ -26,11 +26,11 @@ const playoffPerformanceSchema = new Schema(
       required: true,
     },
     championships: {
-      type: Number,
+      type: [Number],
       required: true,
     },
     runnerups: {
-      type: Number,
+      type: [Number],
       required: true,
     },
   },

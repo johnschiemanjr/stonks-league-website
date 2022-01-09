@@ -29,15 +29,15 @@ for (let i = 0; i < teams.length; i++) {
   performance.losses = 0;
   performance.ties = 0;
   performance.appearances = 0;
-  performance.championships = 0;
-  performance.runnerups = 0;
+  performance.championships = [];
+  performance.runnerups = [];
 
   if (owner.rankCalculatedFinal < APPEARANCE) {
     performance.appearances++;
     if (owner.rankCalculatedFinal === FIRST_PLACE) {
-      performance.championships++;
+      performance.championships.push(YEAR);
     } else if (owner.rankCalculatedFinal === SECOND_PLACE) {
-      performance.runnerups++;
+      performance.runnerups.push(YEAR);
     }
   }
 
@@ -119,7 +119,7 @@ function postPerformance(performance) {
             throw error;
           });
       } else {
-        updateAndPut(performance, response.data[0]);
+        updateAndPut(performance, response.data);
       }
     })
     .catch((error) => {
@@ -132,8 +132,8 @@ function updateAndPut(performanceToAdd, existingPerformance) {
   existingPerformance.losses += performanceToAdd.losses;
   existingPerformance.ties += performanceToAdd.ties;
   existingPerformance.appearances += performanceToAdd.appearances;
-  existingPerformance.championships += performanceToAdd.championships;
-  existingPerformance.runnerups += performanceToAdd.runnerups;
+  existingPerformance.championships.push(performanceToAdd.championships);
+  existingPerformance.runnerups.push(performanceToAdd.runnerups);
 
   axios
     .put(
