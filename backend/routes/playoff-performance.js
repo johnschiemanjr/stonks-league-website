@@ -7,6 +7,12 @@ router.route("/:ownerId").get((req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
 });
 
+router.route("/").get((req, res) => {
+    PlayoffPerformance.find()
+        .then((playoffPerformance) => res.json(playoffPerformance))
+        .catch((err) => res.status(400).json("Error: " + err));
+});
+
 router.route("/add").post((req, res) => {
     const ownerId = String(req.body.ownerId);
     const wins = Number(req.body.wins);
