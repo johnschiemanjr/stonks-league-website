@@ -16,6 +16,7 @@ router.route("/").get((req, res) => {
 
 router.route("/add").post((req, res) => {
 	let ownerId = req.body.ownerId;
+	let teamName = req.body.teamName;
 	let regWins = req.body.regWins;
 	let regLosses = req.body.regLosses;
 	let regTies = req.body.regTies;
@@ -37,6 +38,7 @@ router.route("/add").post((req, res) => {
 
 	const newOwnerOverview = new OwnerOverview({
 		ownerId,
+		teamName,
 		regWins,
 		regLosses,
 		regTies,

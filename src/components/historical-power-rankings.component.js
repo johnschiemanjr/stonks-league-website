@@ -28,8 +28,6 @@ export default class HistoricalPowerRankings extends Component {
     }
 
     componentDidMount() {
-        this.setState({ isLoading: true });
-
         const requestString = "http://192.168.0.13:5000/ownerOverview/";
         const playoffPerformanceRequest =
             "http://192.168.0.13:5000/playoffPerformance/";
@@ -130,8 +128,6 @@ export default class HistoricalPowerRankings extends Component {
     }
 
     getRankings() {
-        const lgAvgPtsPerWeek = this.getAvgPtsPerWeek(this.state.ownerOverview);
-
         let sortedOwners = this.state.owners.sort((owner1, owner2) => {
             if (owner1.powerRating < owner2.powerRating) {
                 return 1;

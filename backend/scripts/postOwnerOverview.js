@@ -31,6 +31,10 @@ axios
 function postOwnerOverview(owners) {
     for (let i = 0; i < owners.length; i++) {
         let ownerId = owners[i].user_id;
+        let teamName = owners[i].metadata.team_name;
+        if (!teamName) {
+            teamName = "Team " + owners[i].display_name;
+        }
 
         let requestString =
             "http://localhost:5000/boxscores/ownerId/" + String(ownerId);
@@ -39,6 +43,7 @@ function postOwnerOverview(owners) {
             .then((response) => {
                 let ownerOverview = getOwnerOverview(response.data, ownerId);
                 ownerOverview.ownerId = ownerId;
+                ownerOverview.teamName = teamName;
 
                 axios
                     .post(

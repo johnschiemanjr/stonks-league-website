@@ -9,6 +9,10 @@ const ownerOverviewSchema = new Schema(
       required: true,
       unique: true,
     },
+    teamName: {
+      type: String,
+      required: true,
+    },
     regWins: {
       type: Number,
       required: true,
