@@ -195,7 +195,7 @@ export default class HistoricalPowerRankings extends Component {
 
         return (
             <div className="container-fluid">
-                <h4 className="col-sm-11 m-2">Historical Power Rankings</h4>
+                <h1 className="col-sm-11 m-2">Historical Power Rankings</h1>
                 <div className="row">
                     <div className="col-sm-11">
                         <div className="card">

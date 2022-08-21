@@ -4,7 +4,7 @@ import Spinner from "react-bootstrap/Spinner";
 
 const useSortableData = (
     items,
-    config = { key: "regWins", direction: "descending" }
+    config = { key: "totalPct", direction: "descending" }
 ) => {
     const [sortConfig, setSortConfig] = React.useState(config);
 
@@ -36,11 +36,11 @@ const useSortableData = (
         setSortConfig({ key, direction });
     };
 
-    return { owners: sortedItems, requestSort, sortConfig };
+    return { owners: sortedItems, requestSort };
 };
 
 const ProductTable = (props) => {
-    const { owners, requestSort, sortConfig } = useSortableData(props.owners);
+    const { owners, requestSort } = useSortableData(props.owners);
 
     return (
         <table className="table table-dark table-striped">
@@ -89,6 +89,16 @@ const ProductTable = (props) => {
                     <th>
                         <button
                             type="button"
+                            onClick={() => requestSort("totalPct")}
+                            className="btn btn-dark"
+                            style={{ fontWeight: "bold" }}
+                        >
+                            PCT
+                        </button>
+                    </th>
+                    <th>
+                        <button
+                            type="button"
                             onClick={() => requestSort("totalPoints")}
                             className="btn btn-dark"
                             style={{ fontWeight: "bold" }}
@@ -114,11 +124,18 @@ const ProductTable = (props) => {
                         <td style={{ textAlign: "center" }}>
                             {owner.teamName}
                         </td>
-                        <td style={{ textAlign: "center" }}>{owner.regWins}</td>
                         <td style={{ textAlign: "center" }}>
-                            {owner.regLosses}
+                            {owner.totalWins}
                         </td>
-                        <td style={{ textAlign: "center" }}>{owner.regTies}</td>
+                        <td style={{ textAlign: "center" }}>
+                            {owner.totalLosses}
+                        </td>
+                        <td style={{ textAlign: "center" }}>
+                            {owner.totalTies}
+                        </td>
+                        <td style={{ textAlign: "center" }}>
+                            {owner.totalPct.toFixed(4)}
+                        </td>
                         <td style={{ textAlign: "center" }}>
                             {owner.totalPoints.toFixed(2)}
                         </td>
@@ -137,7 +154,6 @@ export default class HistoricalStandings extends Component {
         super(props);
 
         this.state = {
-            owners: {},
             ownerOverview: {},
             isLoading: true,
         };
@@ -145,8 +161,7 @@ export default class HistoricalStandings extends Component {
 
     componentDidMount() {
         const requestString = "http://192.168.0.13:5000/ownerOverview/";
-        const ownersRequest = "http://192.168.0.13:5000/owners/";
-        let urls = [requestString, ownersRequest];
+        let urls = [requestString];
 
         let requests = urls.map((url) => {
             return axios.get(url);
@@ -156,7 +171,6 @@ export default class HistoricalStandings extends Component {
             .then((responses) => {
                 this.setState({
                     ownerOverview: responses[0].data,
-                    owners: responses[1].data,
                     isLoading: false,
                 });
             })
@@ -176,7 +190,7 @@ export default class HistoricalStandings extends Component {
         console.log(this.state);
         return (
             <div className="container-fluid">
-                <h4 className="col-sm-11 m-2">All-Time Standings</h4>
+                <h1 className="col-sm-11 m-2">All-Time Standings</h1>
                 <div className="row">
                     <div className="col-sm-11">
                         <div className="card">

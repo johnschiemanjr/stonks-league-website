@@ -23,6 +23,10 @@ router.route("/add").post((req, res) => {
 	let playoffWins = req.body.playoffWins;
 	let playoffLosses = req.body.playoffLosses;
 	let playoffTies = req.body.playoffTies;
+	let totalWins = req.body.totalWins;
+	let totalLosses = req.body.totalLosses;
+	let totalTies = req.body.totalTies;
+	let totalPct = req.body.totalPct;
 	let highScore = req.body.highScore;
 	let lowScore = req.body.lowScore;
 	let bestWin = req.body.bestWin;
@@ -45,6 +49,10 @@ router.route("/add").post((req, res) => {
 		playoffWins,
 		playoffLosses,
 		playoffTies,
+		totalWins,
+		totalLosses,
+		totalTies,
+		totalPct,
 		highScore,
 		lowScore,
 		bestWin,

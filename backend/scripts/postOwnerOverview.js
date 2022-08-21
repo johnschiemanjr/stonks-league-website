@@ -175,6 +175,15 @@ function getOwnerOverview(boxscores, ownerId) {
     ownerOverview.averagePoints = ownerOverview.totalPoints / boxscores.length;
     ownerOverview.averagePointsAgainst =
         ownerOverview.totalPointsAgainst / nonByeWeeks;
+    ownerOverview.totalWins = ownerOverview.regWins + ownerOverview.playoffWins;
+    ownerOverview.totalLosses =
+        ownerOverview.regLosses + ownerOverview.playoffLosses;
+    ownerOverview.totalTies = ownerOverview.regTies + ownerOverview.playoffTies;
+    ownerOverview.totalPct =
+        ownerOverview.totalWins /
+        (ownerOverview.totalWins +
+            ownerOverview.totalLosses +
+            ownerOverview.totalTies);
     return ownerOverview;
 }
 

@@ -37,6 +37,22 @@ const ownerOverviewSchema = new Schema(
       type: Number,
       required: true,
     },
+    totalWins: {
+      type: Number,
+      required: true,
+    },
+    totalLosses: {
+      type: Number,
+      required: true,
+    },
+    totalTies: {
+      type: Number,
+      required: true,
+    },
+    totalPct: {
+      type: Number,
+      required: true,
+    },
     highScore: {
       score: {
         type: Number,
