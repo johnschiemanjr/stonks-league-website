@@ -16,12 +16,17 @@ router.route("/").get((req, res) => {
 
 router.route("/add").post((req, res) => {
 	let ownerId = req.body.ownerId;
+	let teamName = req.body.teamName;
 	let regWins = req.body.regWins;
 	let regLosses = req.body.regLosses;
 	let regTies = req.body.regTies;
 	let playoffWins = req.body.playoffWins;
 	let playoffLosses = req.body.playoffLosses;
 	let playoffTies = req.body.playoffTies;
+	let totalWins = req.body.totalWins;
+	let totalLosses = req.body.totalLosses;
+	let totalTies = req.body.totalTies;
+	let totalPct = req.body.totalPct;
 	let highScore = req.body.highScore;
 	let lowScore = req.body.lowScore;
 	let bestWin = req.body.bestWin;
@@ -37,12 +42,17 @@ router.route("/add").post((req, res) => {
 
 	const newOwnerOverview = new OwnerOverview({
 		ownerId,
+		teamName,
 		regWins,
 		regLosses,
 		regTies,
 		playoffWins,
 		playoffLosses,
 		playoffTies,
+		totalWins,
+		totalLosses,
+		totalTies,
+		totalPct,
 		highScore,
 		lowScore,
 		bestWin,

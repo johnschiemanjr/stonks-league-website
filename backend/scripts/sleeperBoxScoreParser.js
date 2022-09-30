@@ -1,10 +1,10 @@
 const axios = require("axios");
-const year = 2021;
+const year = 2022;
 const players = require("../../data/players.json");
 const sleeperConverter = require("./sleeperConverter");
 
 // Loop through weeks to add boxscores
-for (let week = 1; week < 18; week++) {
+for (let week = 1; week < 4; week++) {
     const boxScores = require("../../data/" +
         year +
         "/raw_boxscores/week" +

@@ -9,6 +9,10 @@ const ownerOverviewSchema = new Schema(
       required: true,
       unique: true,
     },
+    teamName: {
+      type: String,
+      required: true,
+    },
     regWins: {
       type: Number,
       required: true,
@@ -30,6 +34,22 @@ const ownerOverviewSchema = new Schema(
       required: true,
     },
     playoffTies: {
+      type: Number,
+      required: true,
+    },
+    totalWins: {
+      type: Number,
+      required: true,
+    },
+    totalLosses: {
+      type: Number,
+      required: true,
+    },
+    totalTies: {
+      type: Number,
+      required: true,
+    },
+    totalPct: {
       type: Number,
       required: true,
     },

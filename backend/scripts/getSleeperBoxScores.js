@@ -4,14 +4,14 @@ require("dotenv").config({
     path: path.resolve("../.env"),
 });
 const fs = require("fs");
-const year = 2021;
+const year = 2022;
 
 console.log("Getting data...");
 
-for (let week = 1; week < 18; week++) {
+for (let week = 1; week < 4; week++) {
     let requestString =
         "https://api.sleeper.app/v1/league/" +
-        process.env.SLEEPER_LEAGUE_ID +
+        process.env.SLEEPER_LEAGUE_ID_2022 +
         "/matchups/" +
         String(week);
     axios
