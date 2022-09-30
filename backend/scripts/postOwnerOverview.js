@@ -17,7 +17,7 @@ require("dotenv").config({
 
 const requestString =
     "https://api.sleeper.app/v1/league/" +
-    process.env.SLEEPER_LEAGUE_ID +
+    process.env.SLEEPER_LEAGUE_ID_2022 +
     "/users/";
 axios
     .get(requestString)
