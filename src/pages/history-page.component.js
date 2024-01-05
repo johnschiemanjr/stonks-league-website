@@ -4,6 +4,9 @@ import HistoricalStandings from "../components/all-time-standings.component.js";
 import RecordScores from "../components/record-scores.component.js";
 
 export default class HistoryPage extends Component {
+    // Biggest blowouts
+    // Best manager efficiency
+    // Longest win streak
     render() {
         return (
             <div>

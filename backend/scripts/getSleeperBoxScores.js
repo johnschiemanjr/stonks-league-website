@@ -8,7 +8,7 @@ const year = 2022;
 
 console.log("Getting data...");
 
-for (let week = 1; week < 4; week++) {
+for (let week = 4; week < 18; week++) {
     let requestString =
         "https://api.sleeper.app/v1/league/" +
         process.env.SLEEPER_LEAGUE_ID_2022 +

@@ -4,7 +4,7 @@ const players = require("../../data/players.json");
 const sleeperConverter = require("./sleeperConverter");
 
 // Loop through weeks to add boxscores
-for (let week = 1; week < 4; week++) {
+for (let week = 8; week < 9; week++) {
     const boxScores = require("../../data/" +
         year +
         "/raw_boxscores/week" +
