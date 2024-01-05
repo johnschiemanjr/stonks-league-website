@@ -1,7 +1,7 @@
 const axios = require("axios");
 const sleeperConverter = require("./sleeperConverter");
 
-const YEAR = 2021;
+const YEAR = 2022;
 const winnersBracket = require("../../data/" +
     YEAR +
     "/league_winners_bracket.json");

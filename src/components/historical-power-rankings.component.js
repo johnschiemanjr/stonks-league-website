@@ -9,7 +9,7 @@ const RankingRow = (props) => (
         <td style={{ textAlign: "center" }}>{props.powerRating}</td>
         <td style={{ textAlign: "center" }}>{props.championships}</td>
         <td style={{ textAlign: "center" }}>{props.regWinPct}</td>
-        <td style={{ textAlign: "center" }}>{props.playoffGames}</td>
+        <td style={{ textAlign: "center" }}>{props.playoffAppearances}</td>
         <td style={{ textAlign: "center" }}>{props.playoffWins}</td>
         <td style={{ textAlign: "center" }}>{props.avgPts.toFixed(2)}</td>
     </tr>
@@ -158,11 +158,7 @@ export default class HistoricalPowerRankings extends Component {
                     rank={rank + 1}
                     championships={playoffPerformance.championships.length}
                     avgPts={ownerOverview.averagePoints}
-                    playoffGames={
-                        playoffPerformance.wins +
-                        playoffPerformance.losses +
-                        playoffPerformance.ties
-                    }
+                    playoffAppearances={playoffPerformance.appearances}
                     playoffWins={playoffPerformance.wins}
                     regWinPct={
                         ownerOverview.regWins +
@@ -214,7 +210,7 @@ export default class HistoricalPowerRankings extends Component {
                                                     Reg Season Win %
                                                 </th>
                                                 <th scope="col">
-                                                    Playoff Games
+                                                    Playoff Appearances
                                                 </th>
                                                 <th scope="col">
                                                     Playoff Wins
